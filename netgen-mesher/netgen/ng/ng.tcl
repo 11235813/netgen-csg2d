@@ -89,11 +89,6 @@ if { [catch { load libgeom2dvis[info sharedlibextension] Ng_Geom2d } result ] } 
     puts "cannot load 2d meshing module" 
     puts "error: $result"
 }
-if { [catch { load libngcsg2d[info sharedlibextension] Ng_CSG2d } result ] } {
-    puts "cannot load 2d csg module" 
-    puts "error: $result"
-}
-
 
 
 catch { source ${ngdir}/csgeom.tcl }
