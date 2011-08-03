@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/netgen-mesher/!svn/ver/428/netgen
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/netgen-mesher/!svn/ver/1/netgen/mkinstalldirs
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/netgen-mesher/!svn/ver/49/netgen/LICENSE
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/netgen-mesher/!svn/ver/1/netgen/AUTHORS
+END
+depcomp
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/netgen-mesher/!svn/ver/1/netgen/depcomp
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/netgen-mesher/!svn/ver/1/netgen/ChangeLog
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/361/netgen/config.guess
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/netgen-mesher/!svn/ver/361/netgen/config.sub
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/netgen-mesher/!svn/ver/407/netgen/config.h.in
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/428/netgen/configure.ac
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/netgen-mesher/!svn/ver/1/netgen/TODO
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/netgen-mesher/!svn/ver/1/netgen/INSTALL
+END
+Makefile.cvs
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/netgen-mesher/!svn/ver/1/netgen/Makefile.cvs
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/netgen-mesher/!svn/ver/1/netgen/missing
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/netgen-mesher/!svn/ver/363/netgen/Makefile.am
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/netgen-mesher/!svn/ver/1/netgen/NEWS
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/netgen-mesher/!svn/ver/361/netgen/install-sh
+END

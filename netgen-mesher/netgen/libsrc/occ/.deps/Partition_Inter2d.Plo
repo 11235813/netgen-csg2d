@@ -1,0 +1,1262 @@
+Partition_Inter2d.lo: Partition_Inter2d.cxx Partition_Inter2d.ixx \
+ /usr/include/c++/4.5/climits \
+ /usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include-fixed/limits.h \
+ /usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/stdio_lim.h Partition_Inter2d.jxx \
+ ../../libsrc/include/mystdlib.h ../../config.h \
+ /usr/include/c++/4.5/iostream \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/c++config.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/os_defines.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/4.5/ostream /usr/include/c++/4.5/ios \
+ /usr/include/c++/4.5/iosfwd /usr/include/c++/4.5/bits/stringfwd.h \
+ /usr/include/c++/4.5/bits/postypes.h /usr/include/c++/4.5/cwchar \
+ /usr/include/c++/4.5/cstddef \
+ /usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/wchar.h /usr/include/stdio.h \
+ /usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/xlocale.h \
+ /usr/include/bits/wchar2.h /usr/include/c++/4.5/exception \
+ /usr/include/c++/4.5/bits/char_traits.h \
+ /usr/include/c++/4.5/bits/stl_algobase.h \
+ /usr/include/c++/4.5/bits/functexcept.h \
+ /usr/include/c++/4.5/exception_defines.h \
+ /usr/include/c++/4.5/bits/cpp_type_traits.h \
+ /usr/include/c++/4.5/ext/type_traits.h \
+ /usr/include/c++/4.5/ext/numeric_traits.h \
+ /usr/include/c++/4.5/bits/stl_pair.h /usr/include/c++/4.5/bits/move.h \
+ /usr/include/c++/4.5/bits/concept_check.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.5/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.5/bits/stl_iterator.h \
+ /usr/include/c++/4.5/debug/debug.h /usr/include/c++/4.5/bits/localefwd.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/4.5/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/4.5/cctype \
+ /usr/include/ctype.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/c++/4.5/bits/ios_base.h \
+ /usr/include/c++/4.5/ext/atomicity.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/gthr.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/time.h \
+ /usr/include/bits/sched.h /usr/include/bits/time.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/setjmp.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/getopt.h /usr/include/bits/unistd.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/atomic_word.h \
+ /usr/include/c++/4.5/bits/locale_classes.h /usr/include/c++/4.5/string \
+ /usr/include/c++/4.5/bits/allocator.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/4.5/ext/new_allocator.h /usr/include/c++/4.5/new \
+ /usr/include/c++/4.5/bits/ostream_insert.h \
+ /usr/include/c++/4.5/cxxabi-forced.h \
+ /usr/include/c++/4.5/bits/stl_function.h \
+ /usr/include/c++/4.5/backward/binders.h \
+ /usr/include/c++/4.5/bits/basic_string.h \
+ /usr/include/c++/4.5/initializer_list \
+ /usr/include/c++/4.5/bits/basic_string.tcc \
+ /usr/include/c++/4.5/bits/locale_classes.tcc \
+ /usr/include/c++/4.5/streambuf /usr/include/c++/4.5/bits/streambuf.tcc \
+ /usr/include/c++/4.5/bits/basic_ios.h \
+ /usr/include/c++/4.5/bits/locale_facets.h /usr/include/c++/4.5/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/ctype_base.h \
+ /usr/include/c++/4.5/bits/streambuf_iterator.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/ctype_inline.h \
+ /usr/include/c++/4.5/bits/locale_facets.tcc \
+ /usr/include/c++/4.5/bits/basic_ios.tcc \
+ /usr/include/c++/4.5/bits/ostream.tcc /usr/include/c++/4.5/istream \
+ /usr/include/c++/4.5/bits/istream.tcc /usr/include/c++/4.5/iomanip \
+ /usr/include/c++/4.5/fstream /usr/include/c++/4.5/bits/codecvt.h \
+ /usr/include/c++/4.5/cstdio /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/4.5/i686-linux-gnu/bits/c++io.h \
+ /usr/include/c++/4.5/bits/fstream.tcc /usr/include/c++/4.5/sstream \
+ /usr/include/c++/4.5/bits/sstream.tcc /usr/include/c++/4.5/cstdlib \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/sys/types.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/sys/sysmacros.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib.h \
+ /usr/include/c++/4.5/cmath /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
+ /usr/include/c++/4.5/bits/cmath.tcc /usr/include/c++/4.5/ctime \
+ /usr/include/c++/4.5/cstring /usr/include/string.h \
+ /usr/include/bits/string3.h /usr/include/c++/4.5/algorithm \
+ /usr/include/c++/4.5/utility /usr/include/c++/4.5/bits/stl_relops.h \
+ /usr/include/c++/4.5/bits/stl_algo.h \
+ /usr/include/c++/4.5/bits/algorithmfwd.h \
+ /usr/include/c++/4.5/bits/stl_heap.h \
+ /usr/include/c++/4.5/bits/stl_tempbuf.h \
+ /usr/include/c++/4.5/bits/stl_construct.h \
+ /usr/include/c++/4.5/bits/stl_uninitialized.h \
+ /usr/include/c++/4.5/typeinfo \
+ /usr/include/opencascade/BRepAlgo_AsDes.hxx \
+ /usr/include/opencascade/Standard.hxx \
+ /usr/include/opencascade/Standard_Address.hxx \
+ /usr/include/opencascade/Standard_TypeDef.hxx \
+ /usr/include/opencascade/Standard_Macro.hxx \
+ /usr/include/opencascade/arch-6.3.0/Standard_Macro64.hxx \
+ /usr/include/opencascade/Standard_Integer.hxx \
+ /usr/include/opencascade/Standard_values.h \
+ /usr/include/opencascade/Standard_Size.hxx \
+ /usr/include/opencascade/Standard_Boolean.hxx \
+ /usr/include/opencascade/Handle_BRepAlgo_AsDes.hxx \
+ /usr/include/opencascade/Handle_MMgt_TShared.hxx \
+ /usr/include/opencascade/Handle_Standard_Transient.hxx \
+ /usr/include/opencascade/Standard_PrimitiveTypes.hxx \
+ /usr/include/opencascade/Standard_Real.hxx \
+ /usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/float.h \
+ /usr/include/opencascade/Standard_Character.hxx \
+ /usr/include/opencascade/Standard_ctype.hxx \
+ /usr/include/opencascade/Standard_ExtCharacter.hxx \
+ /usr/include/opencascade/Standard_OStream.hxx \
+ /usr/include/opencascade/Standard_Stream.hxx \
+ /usr/include/opencascade/Standard_CString.hxx \
+ /usr/include/opencascade/Standard_ExtString.hxx \
+ /usr/include/opencascade/Standard_Storable.hxx \
+ /usr/include/opencascade/Standard_Transient_proto.hxx \
+ /usr/include/opencascade/TopTools_DataMapOfShapeListOfShape.hxx \
+ /usr/include/opencascade/TCollection_BasicMap.hxx \
+ /usr/include/opencascade/TCollection_BasicMap.lxx \
+ /usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape.hxx \
+ /usr/include/opencascade/Handle_TCollection_MapNode.hxx \
+ /usr/include/opencascade/MMgt_TShared.hxx \
+ /usr/include/opencascade/Standard_Transient.hxx \
+ /usr/include/opencascade/Standard_Type.hxx \
+ /usr/include/opencascade/Handle_Standard_Type.hxx \
+ /usr/include/opencascade/Standard_KindOfType.hxx \
+ /usr/include/opencascade/Standard_Type.lxx \
+ /usr/include/opencascade/TopoDS_Face.hxx \
+ /usr/include/opencascade/TopoDS_Shape.hxx \
+ /usr/include/opencascade/Handle_TopoDS_TShape.hxx \
+ /usr/include/opencascade/TopLoc_Location.hxx \
+ /usr/include/opencascade/TopLoc_SListOfItemLocation.hxx \
+ /usr/include/opencascade/Handle_TopLoc_SListNodeOfSListOfItemLocation.hxx \
+ /usr/include/opencascade/TCollection_SList.lxx \
+ /usr/include/opencascade/Handle_TopLoc_Datum3D.hxx \
+ /usr/include/opencascade/TopLoc_Location.lxx \
+ /usr/include/opencascade/TopLoc_ItemLocation.hxx \
+ /usr/include/opencascade/TopLoc_TrsfPtr.hxx \
+ /usr/include/opencascade/TopAbs_Orientation.hxx \
+ /usr/include/opencascade/TopAbs_ShapeEnum.hxx \
+ /usr/include/opencascade/TopoDS_Shape.lxx \
+ /usr/include/opencascade/TopoDS_TShape.hxx \
+ /usr/include/opencascade/TopoDS_ListOfShape.hxx \
+ /usr/include/opencascade/Handle_TopoDS_ListNodeOfListOfShape.hxx \
+ /usr/include/opencascade/TCollection_List.lxx \
+ /usr/include/opencascade/TopoDS_TShape.lxx \
+ /usr/include/opencascade/TopAbs.hxx \
+ /usr/include/opencascade/TopAbs_State.hxx \
+ /usr/include/opencascade/TopTools_MapOfShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_StdMapNodeOfMapOfShape.hxx \
+ /usr/include/opencascade/TopoDS_Vertex.hxx \
+ /usr/include/opencascade/TopTools_ListOfShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_ListNodeOfListOfShape.hxx \
+ /usr/include/opencascade/TopoDS_Edge.hxx Partition_Inter2d.hxx \
+ utilities.h /usr/include/opencascade/BRepAdaptor_Curve.hxx \
+ /usr/include/opencascade/gp_Trsf.hxx \
+ /usr/include/opencascade/gp_TrsfForm.hxx \
+ /usr/include/opencascade/gp_Mat.hxx /usr/include/opencascade/gp_Mat.lxx \
+ /usr/include/opencascade/gp.hxx /usr/include/opencascade/gp.lxx \
+ /usr/include/opencascade/Standard_OutOfRange.hxx \
+ /usr/include/opencascade/Handle_Standard_OutOfRange.hxx \
+ /usr/include/opencascade/Handle_Standard_RangeError.hxx \
+ /usr/include/opencascade/Handle_Standard_DomainError.hxx \
+ /usr/include/opencascade/Handle_Standard_Failure.hxx \
+ /usr/include/opencascade/Standard_SStream.hxx \
+ /usr/include/opencascade/Standard_RangeError.hxx \
+ /usr/include/opencascade/Standard_DomainError.hxx \
+ /usr/include/opencascade/Standard_Failure.hxx \
+ /usr/include/opencascade/Standard_Failure.lxx \
+ /usr/include/opencascade/Standard_ConstructionError.hxx \
+ /usr/include/opencascade/Handle_Standard_ConstructionError.hxx \
+ /usr/include/opencascade/gp_XYZ.hxx /usr/include/opencascade/gp_XYZ.lxx \
+ /usr/include/opencascade/gp_Trsf.lxx \
+ /usr/include/opencascade/gp_Trsf2d.hxx \
+ /usr/include/opencascade/gp_Mat2d.hxx \
+ /usr/include/opencascade/gp_Mat2d.lxx /usr/include/opencascade/gp_XY.hxx \
+ /usr/include/opencascade/gp_XY.lxx \
+ /usr/include/opencascade/gp_Trsf2d.lxx \
+ /usr/include/opencascade/gp_Pnt2d.hxx \
+ /usr/include/opencascade/gp_Pnt2d.lxx \
+ /usr/include/opencascade/gp_Vec2d.hxx \
+ /usr/include/opencascade/gp_Vec2d.lxx \
+ /usr/include/opencascade/gp_Dir2d.hxx \
+ /usr/include/opencascade/gp_Dir2d.lxx \
+ /usr/include/opencascade/gp_Ax2d.hxx \
+ /usr/include/opencascade/gp_Ax2d.lxx /usr/include/opencascade/gp_Vec.hxx \
+ /usr/include/opencascade/gp_Vec.lxx /usr/include/opencascade/gp_Dir.hxx \
+ /usr/include/opencascade/gp_Dir.lxx /usr/include/opencascade/gp_Pnt.hxx \
+ /usr/include/opencascade/gp_Pnt.lxx \
+ /usr/include/opencascade/gp_VectorWithNullMagnitude.hxx \
+ /usr/include/opencascade/Handle_gp_VectorWithNullMagnitude.hxx \
+ /usr/include/opencascade/GeomAdaptor_Curve.hxx \
+ /usr/include/opencascade/Handle_Geom_Curve.hxx \
+ /usr/include/opencascade/Handle_Geom_Geometry.hxx \
+ /usr/include/opencascade/GeomAbs_CurveType.hxx \
+ /usr/include/opencascade/Adaptor3d_Curve.hxx \
+ /usr/include/opencascade/GeomAbs_Shape.hxx \
+ /usr/include/opencascade/Handle_Adaptor3d_HCurve.hxx \
+ /usr/include/opencascade/Handle_Geom_BezierCurve.hxx \
+ /usr/include/opencascade/Handle_Geom_BoundedCurve.hxx \
+ /usr/include/opencascade/Handle_Geom_BSplineCurve.hxx \
+ /usr/include/opencascade/GeomAdaptor_Curve.lxx \
+ /usr/include/opencascade/Geom_Curve.hxx \
+ /usr/include/opencascade/Geom_Geometry.hxx \
+ /usr/include/opencascade/Handle_Adaptor3d_HCurveOnSurface.hxx \
+ /usr/include/opencascade/BRepLib_MakeVertex.hxx \
+ /usr/include/opencascade/BRepLib_MakeShape.hxx \
+ /usr/include/opencascade/BRepLib_Command.hxx \
+ /usr/include/opencascade/BRepLib_ShapeModification.hxx \
+ /usr/include/opencascade/BRep_Builder.hxx \
+ /usr/include/opencascade/TopoDS_Builder3D.hxx \
+ /usr/include/opencascade/TopoDS_Builder.hxx \
+ /usr/include/opencascade/Handle_Geom_Surface.hxx \
+ /usr/include/opencascade/Handle_Poly_Triangulation.hxx \
+ /usr/include/opencascade/Handle_Poly_Polygon3D.hxx \
+ /usr/include/opencascade/Handle_Poly_PolygonOnTriangulation.hxx \
+ /usr/include/opencascade/Handle_Geom2d_Curve.hxx \
+ /usr/include/opencascade/Handle_Geom2d_Geometry.hxx \
+ /usr/include/opencascade/Handle_Poly_Polygon2D.hxx \
+ /usr/include/opencascade/BRep_Tool.hxx \
+ /usr/include/opencascade/Geom_Surface.hxx \
+ /usr/include/opencascade/Precision.hxx \
+ /usr/include/opencascade/Precision.lxx \
+ /usr/include/opencascade/TopExp.hxx \
+ /usr/include/opencascade/TopExp_Explorer.hxx \
+ /usr/include/opencascade/TopExp_Stack.hxx \
+ /usr/include/opencascade/TopExp_Explorer.lxx \
+ /usr/include/opencascade/TopoDS_Iterator.hxx \
+ /usr/include/opencascade/TopoDS_ListIteratorOfListOfShape.hxx \
+ /usr/include/opencascade/TCollection_ListIterator.lxx \
+ /usr/include/opencascade/TopoDS_Iterator.lxx \
+ /usr/include/opencascade/Standard_NoSuchObject.hxx \
+ /usr/include/opencascade/Handle_Standard_NoSuchObject.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Transition.hxx \
+ /usr/include/opencascade/TopOpeBRep_EdgesIntersector.hxx \
+ /usr/include/opencascade/Handle_BRepAdaptor_HSurface.hxx \
+ /usr/include/opencascade/Handle_Adaptor3d_HSurface.hxx \
+ /usr/include/opencascade/GeomAbs_SurfaceType.hxx \
+ /usr/include/opencascade/IntRes2d_Domain.hxx \
+ /usr/include/opencascade/IntRes2d_Domain.lxx \
+ /usr/include/opencascade/Geom2dAdaptor_Curve.hxx \
+ /usr/include/opencascade/Adaptor2d_Curve2d.hxx \
+ /usr/include/opencascade/Handle_Adaptor2d_HCurve2d.hxx \
+ /usr/include/opencascade/Handle_Geom2d_BezierCurve.hxx \
+ /usr/include/opencascade/Handle_Geom2d_BoundedCurve.hxx \
+ /usr/include/opencascade/Handle_Geom2d_BSplineCurve.hxx \
+ /usr/include/opencascade/Geom2dAdaptor_Curve.lxx \
+ /usr/include/opencascade/Geom2d_Curve.hxx \
+ /usr/include/opencascade/Geom2d_Geometry.hxx \
+ /usr/include/opencascade/Geom2dInt_GInter.hxx \
+ /usr/include/opencascade/IntCurve_IntConicConic.hxx \
+ /usr/include/opencascade/IntCurve_IntImpConicParConic.hxx \
+ /usr/include/opencascade/IntRes2d_Intersection.hxx \
+ /usr/include/opencascade/IntRes2d_SequenceOfIntersectionPoint.hxx \
+ /usr/include/opencascade/TCollection_BaseSequence.hxx \
+ /usr/include/opencascade/TCollection_BaseSequence.lxx \
+ /usr/include/opencascade/Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint.hxx \
+ /usr/include/opencascade/Handle_TCollection_SeqNode.hxx \
+ /usr/include/opencascade/TCollection_Sequence.lxx \
+ /usr/include/opencascade/IntRes2d_SequenceOfIntersectionSegment.hxx \
+ /usr/include/opencascade/Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment.hxx \
+ /usr/include/opencascade/IntRes2d_Intersection.lxx \
+ /usr/include/opencascade/StdFail_NotDone.hxx \
+ /usr/include/opencascade/Handle_StdFail_NotDone.hxx \
+ /usr/include/opencascade/IntCurve_IntConicConic.lxx \
+ /usr/include/opencascade/Geom2dInt_TheIntConicCurveOfGInter.hxx \
+ /usr/include/opencascade/IntCurve_IntConicCurveGen.lxx \
+ /usr/include/opencascade/Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter.hxx \
+ /usr/include/opencascade/gp_Lin2d.hxx \
+ /usr/include/opencascade/gp_Lin2d.lxx \
+ /usr/include/opencascade/gp_Circ2d.hxx \
+ /usr/include/opencascade/gp_Ax22d.hxx \
+ /usr/include/opencascade/gp_Ax22d.lxx \
+ /usr/include/opencascade/gp_Circ2d.lxx \
+ /usr/include/opencascade/gp_Elips2d.hxx \
+ /usr/include/opencascade/gp_Elips2d.lxx \
+ /usr/include/opencascade/gp_Hypr2d.hxx \
+ /usr/include/opencascade/gp_Hypr2d.lxx \
+ /usr/include/opencascade/gp_Parab2d.hxx \
+ /usr/include/opencascade/gp_Parab2d.lxx \
+ /usr/include/opencascade/IntCurve_IConicTool.hxx \
+ /usr/include/opencascade/Geom2dInt_TheIntPCurvePCurveOfGInter.hxx \
+ /usr/include/opencascade/IntCurve_IntCurveCurveGen.lxx \
+ /usr/include/opencascade/TopOpeBRep_SequenceOfPoint2d.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d.hxx \
+ /usr/include/opencascade/TopOpeBRep_P2Dstatus.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Config.hxx \
+ /usr/include/opencascade/TopOpeBRep_Point2d.hxx \
+ /usr/include/opencascade/IntRes2d_IntersectionPoint.hxx \
+ /usr/include/opencascade/IntRes2d_Transition.hxx \
+ /usr/include/opencascade/IntRes2d_Position.hxx \
+ /usr/include/opencascade/IntRes2d_TypeTrans.hxx \
+ /usr/include/opencascade/IntRes2d_Situation.hxx \
+ /usr/include/opencascade/IntRes2d_Transition.lxx \
+ /usr/include/opencascade/IntRes2d_IntersectionPoint.lxx \
+ /usr/include/opencascade/Handle_TopOpeBRep_Hctxff2d.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRep_Hctxee2d.hxx \
+ /usr/include/opencascade/TopOpeBRep_Point2d.lxx \
+ /usr/include/opencascade/TopOpeBRep_define.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_define.hxx \
+ /usr/include/opencascade/TopOpeBRepTool_define.hxx \
+ /usr/include/opencascade/TopTools_MapIteratorOfMapOfShape.hxx \
+ /usr/include/opencascade/TCollection_BasicMapIterator.hxx \
+ /usr/include/opencascade/TCollection_BasicMapIterator.lxx \
+ /usr/include/opencascade/TopTools_ListIteratorOfListOfShape.hxx \
+ /usr/include/opencascade/TopTools_IndexedMapOfShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape.hxx \
+ /usr/include/opencascade/TopTools_IndexedMapOfOrientedShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape.hxx \
+ /usr/include/opencascade/TopTools_DataMapOfShapeShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeShape.hxx \
+ /usr/include/opencascade/TopTools_DataMapOfShapeInteger.hxx \
+ /usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger.hxx \
+ /usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeShape.hxx \
+ /usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeInteger.hxx \
+ /usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeListOfShape.hxx \
+ /usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger.hxx \
+ /usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger.hxx \
+ /usr/include/opencascade/TopTools_IndexedDataMapOfShapeListOfShape.hxx \
+ /usr/include/opencascade/Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape.hxx \
+ /usr/include/opencascade/TopTools_DataMapOfOrientedShapeInteger.hxx \
+ /usr/include/opencascade/TCollection_AsciiString.hxx \
+ /usr/include/opencascade/Standard_PCharacter.hxx \
+ /usr/include/opencascade/Standard_IStream.hxx \
+ /usr/include/opencascade/TCollection_AsciiString.lxx \
+ /usr/include/opencascade/TopOpeBRepDS_ListIteratorOfListOfInterference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_Interference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_ListNodeOfListOfInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_ListOfInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Interference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Kind.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_ShapeShapeInterference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_ShapeShapeInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_CurvePointInterference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_CurvePointInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_EdgeVertexInterference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_EdgeVertexInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_FaceEdgeInterference.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_FaceEdgeInterference.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_InterferenceIterator.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_HDataStructure.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_HDataStructure.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_DataStructure.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_MapOfSurface.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_MapOfCurve.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_MapOfPoint.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_MapOfShapeData.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Point.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Surface.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_Curve.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_ShapeSurface.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_IndexedDataMapOfShapeWithState.hxx \
+ /usr/include/opencascade/Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState.hxx \
+ /usr/include/opencascade/TopOpeBRepDS_PDataStructure.hxx \
+ /usr/include/opencascade/TopoDS.hxx /usr/include/opencascade/TopoDS.lxx \
+ /usr/include/opencascade/Standard_TypeMismatch.hxx \
+ /usr/include/opencascade/Handle_Standard_TypeMismatch.hxx
+
+Partition_Inter2d.ixx:
+
+/usr/include/c++/4.5/climits:
+
+/usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include-fixed/limits.h:
+
+/usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/predefs.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+Partition_Inter2d.jxx:
+
+../../libsrc/include/mystdlib.h:
+
+../../config.h:
+
+/usr/include/c++/4.5/iostream:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/os_defines.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/4.5/ostream:
+
+/usr/include/c++/4.5/ios:
+
+/usr/include/c++/4.5/iosfwd:
+
+/usr/include/c++/4.5/bits/stringfwd.h:
+
+/usr/include/c++/4.5/bits/postypes.h:
+
+/usr/include/c++/4.5/cwchar:
+
+/usr/include/c++/4.5/cstddef:
+
+/usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/stddef.h:
+
+/usr/include/wchar.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/stdarg.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/wchar2.h:
+
+/usr/include/c++/4.5/exception:
+
+/usr/include/c++/4.5/bits/char_traits.h:
+
+/usr/include/c++/4.5/bits/stl_algobase.h:
+
+/usr/include/c++/4.5/bits/functexcept.h:
+
+/usr/include/c++/4.5/exception_defines.h:
+
+/usr/include/c++/4.5/bits/cpp_type_traits.h:
+
+/usr/include/c++/4.5/ext/type_traits.h:
+
+/usr/include/c++/4.5/ext/numeric_traits.h:
+
+/usr/include/c++/4.5/bits/stl_pair.h:
+
+/usr/include/c++/4.5/bits/move.h:
+
+/usr/include/c++/4.5/bits/concept_check.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.5/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.5/bits/stl_iterator.h:
+
+/usr/include/c++/4.5/debug/debug.h:
+
+/usr/include/c++/4.5/bits/localefwd.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/4.5/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/4.5/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/c++/4.5/bits/ios_base.h:
+
+/usr/include/c++/4.5/ext/atomicity.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/gthr.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/unistd.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/bits/unistd.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/4.5/bits/locale_classes.h:
+
+/usr/include/c++/4.5/string:
+
+/usr/include/c++/4.5/bits/allocator.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/4.5/ext/new_allocator.h:
+
+/usr/include/c++/4.5/new:
+
+/usr/include/c++/4.5/bits/ostream_insert.h:
+
+/usr/include/c++/4.5/cxxabi-forced.h:
+
+/usr/include/c++/4.5/bits/stl_function.h:
+
+/usr/include/c++/4.5/backward/binders.h:
+
+/usr/include/c++/4.5/bits/basic_string.h:
+
+/usr/include/c++/4.5/initializer_list:
+
+/usr/include/c++/4.5/bits/basic_string.tcc:
+
+/usr/include/c++/4.5/bits/locale_classes.tcc:
+
+/usr/include/c++/4.5/streambuf:
+
+/usr/include/c++/4.5/bits/streambuf.tcc:
+
+/usr/include/c++/4.5/bits/basic_ios.h:
+
+/usr/include/c++/4.5/bits/locale_facets.h:
+
+/usr/include/c++/4.5/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/4.5/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/4.5/bits/locale_facets.tcc:
+
+/usr/include/c++/4.5/bits/basic_ios.tcc:
+
+/usr/include/c++/4.5/bits/ostream.tcc:
+
+/usr/include/c++/4.5/istream:
+
+/usr/include/c++/4.5/bits/istream.tcc:
+
+/usr/include/c++/4.5/iomanip:
+
+/usr/include/c++/4.5/fstream:
+
+/usr/include/c++/4.5/bits/codecvt.h:
+
+/usr/include/c++/4.5/cstdio:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/4.5/i686-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/4.5/bits/fstream.tcc:
+
+/usr/include/c++/4.5/sstream:
+
+/usr/include/c++/4.5/bits/sstream.tcc:
+
+/usr/include/c++/4.5/cstdlib:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib.h:
+
+/usr/include/c++/4.5/cmath:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/mathinline.h:
+
+/usr/include/c++/4.5/bits/cmath.tcc:
+
+/usr/include/c++/4.5/ctime:
+
+/usr/include/c++/4.5/cstring:
+
+/usr/include/string.h:
+
+/usr/include/bits/string3.h:
+
+/usr/include/c++/4.5/algorithm:
+
+/usr/include/c++/4.5/utility:
+
+/usr/include/c++/4.5/bits/stl_relops.h:
+
+/usr/include/c++/4.5/bits/stl_algo.h:
+
+/usr/include/c++/4.5/bits/algorithmfwd.h:
+
+/usr/include/c++/4.5/bits/stl_heap.h:
+
+/usr/include/c++/4.5/bits/stl_tempbuf.h:
+
+/usr/include/c++/4.5/bits/stl_construct.h:
+
+/usr/include/c++/4.5/bits/stl_uninitialized.h:
+
+/usr/include/c++/4.5/typeinfo:
+
+/usr/include/opencascade/BRepAlgo_AsDes.hxx:
+
+/usr/include/opencascade/Standard.hxx:
+
+/usr/include/opencascade/Standard_Address.hxx:
+
+/usr/include/opencascade/Standard_TypeDef.hxx:
+
+/usr/include/opencascade/Standard_Macro.hxx:
+
+/usr/include/opencascade/arch-6.3.0/Standard_Macro64.hxx:
+
+/usr/include/opencascade/Standard_Integer.hxx:
+
+/usr/include/opencascade/Standard_values.h:
+
+/usr/include/opencascade/Standard_Size.hxx:
+
+/usr/include/opencascade/Standard_Boolean.hxx:
+
+/usr/include/opencascade/Handle_BRepAlgo_AsDes.hxx:
+
+/usr/include/opencascade/Handle_MMgt_TShared.hxx:
+
+/usr/include/opencascade/Handle_Standard_Transient.hxx:
+
+/usr/include/opencascade/Standard_PrimitiveTypes.hxx:
+
+/usr/include/opencascade/Standard_Real.hxx:
+
+/usr/lib/i386-linux-gnu/gcc/i686-linux-gnu/4.5.2/include/float.h:
+
+/usr/include/opencascade/Standard_Character.hxx:
+
+/usr/include/opencascade/Standard_ctype.hxx:
+
+/usr/include/opencascade/Standard_ExtCharacter.hxx:
+
+/usr/include/opencascade/Standard_OStream.hxx:
+
+/usr/include/opencascade/Standard_Stream.hxx:
+
+/usr/include/opencascade/Standard_CString.hxx:
+
+/usr/include/opencascade/Standard_ExtString.hxx:
+
+/usr/include/opencascade/Standard_Storable.hxx:
+
+/usr/include/opencascade/Standard_Transient_proto.hxx:
+
+/usr/include/opencascade/TopTools_DataMapOfShapeListOfShape.hxx:
+
+/usr/include/opencascade/TCollection_BasicMap.hxx:
+
+/usr/include/opencascade/TCollection_BasicMap.lxx:
+
+/usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape.hxx:
+
+/usr/include/opencascade/Handle_TCollection_MapNode.hxx:
+
+/usr/include/opencascade/MMgt_TShared.hxx:
+
+/usr/include/opencascade/Standard_Transient.hxx:
+
+/usr/include/opencascade/Standard_Type.hxx:
+
+/usr/include/opencascade/Handle_Standard_Type.hxx:
+
+/usr/include/opencascade/Standard_KindOfType.hxx:
+
+/usr/include/opencascade/Standard_Type.lxx:
+
+/usr/include/opencascade/TopoDS_Face.hxx:
+
+/usr/include/opencascade/TopoDS_Shape.hxx:
+
+/usr/include/opencascade/Handle_TopoDS_TShape.hxx:
+
+/usr/include/opencascade/TopLoc_Location.hxx:
+
+/usr/include/opencascade/TopLoc_SListOfItemLocation.hxx:
+
+/usr/include/opencascade/Handle_TopLoc_SListNodeOfSListOfItemLocation.hxx:
+
+/usr/include/opencascade/TCollection_SList.lxx:
+
+/usr/include/opencascade/Handle_TopLoc_Datum3D.hxx:
+
+/usr/include/opencascade/TopLoc_Location.lxx:
+
+/usr/include/opencascade/TopLoc_ItemLocation.hxx:
+
+/usr/include/opencascade/TopLoc_TrsfPtr.hxx:
+
+/usr/include/opencascade/TopAbs_Orientation.hxx:
+
+/usr/include/opencascade/TopAbs_ShapeEnum.hxx:
+
+/usr/include/opencascade/TopoDS_Shape.lxx:
+
+/usr/include/opencascade/TopoDS_TShape.hxx:
+
+/usr/include/opencascade/TopoDS_ListOfShape.hxx:
+
+/usr/include/opencascade/Handle_TopoDS_ListNodeOfListOfShape.hxx:
+
+/usr/include/opencascade/TCollection_List.lxx:
+
+/usr/include/opencascade/TopoDS_TShape.lxx:
+
+/usr/include/opencascade/TopAbs.hxx:
+
+/usr/include/opencascade/TopAbs_State.hxx:
+
+/usr/include/opencascade/TopTools_MapOfShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_StdMapNodeOfMapOfShape.hxx:
+
+/usr/include/opencascade/TopoDS_Vertex.hxx:
+
+/usr/include/opencascade/TopTools_ListOfShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_ListNodeOfListOfShape.hxx:
+
+/usr/include/opencascade/TopoDS_Edge.hxx:
+
+Partition_Inter2d.hxx:
+
+utilities.h:
+
+/usr/include/opencascade/BRepAdaptor_Curve.hxx:
+
+/usr/include/opencascade/gp_Trsf.hxx:
+
+/usr/include/opencascade/gp_TrsfForm.hxx:
+
+/usr/include/opencascade/gp_Mat.hxx:
+
+/usr/include/opencascade/gp_Mat.lxx:
+
+/usr/include/opencascade/gp.hxx:
+
+/usr/include/opencascade/gp.lxx:
+
+/usr/include/opencascade/Standard_OutOfRange.hxx:
+
+/usr/include/opencascade/Handle_Standard_OutOfRange.hxx:
+
+/usr/include/opencascade/Handle_Standard_RangeError.hxx:
+
+/usr/include/opencascade/Handle_Standard_DomainError.hxx:
+
+/usr/include/opencascade/Handle_Standard_Failure.hxx:
+
+/usr/include/opencascade/Standard_SStream.hxx:
+
+/usr/include/opencascade/Standard_RangeError.hxx:
+
+/usr/include/opencascade/Standard_DomainError.hxx:
+
+/usr/include/opencascade/Standard_Failure.hxx:
+
+/usr/include/opencascade/Standard_Failure.lxx:
+
+/usr/include/opencascade/Standard_ConstructionError.hxx:
+
+/usr/include/opencascade/Handle_Standard_ConstructionError.hxx:
+
+/usr/include/opencascade/gp_XYZ.hxx:
+
+/usr/include/opencascade/gp_XYZ.lxx:
+
+/usr/include/opencascade/gp_Trsf.lxx:
+
+/usr/include/opencascade/gp_Trsf2d.hxx:
+
+/usr/include/opencascade/gp_Mat2d.hxx:
+
+/usr/include/opencascade/gp_Mat2d.lxx:
+
+/usr/include/opencascade/gp_XY.hxx:
+
+/usr/include/opencascade/gp_XY.lxx:
+
+/usr/include/opencascade/gp_Trsf2d.lxx:
+
+/usr/include/opencascade/gp_Pnt2d.hxx:
+
+/usr/include/opencascade/gp_Pnt2d.lxx:
+
+/usr/include/opencascade/gp_Vec2d.hxx:
+
+/usr/include/opencascade/gp_Vec2d.lxx:
+
+/usr/include/opencascade/gp_Dir2d.hxx:
+
+/usr/include/opencascade/gp_Dir2d.lxx:
+
+/usr/include/opencascade/gp_Ax2d.hxx:
+
+/usr/include/opencascade/gp_Ax2d.lxx:
+
+/usr/include/opencascade/gp_Vec.hxx:
+
+/usr/include/opencascade/gp_Vec.lxx:
+
+/usr/include/opencascade/gp_Dir.hxx:
+
+/usr/include/opencascade/gp_Dir.lxx:
+
+/usr/include/opencascade/gp_Pnt.hxx:
+
+/usr/include/opencascade/gp_Pnt.lxx:
+
+/usr/include/opencascade/gp_VectorWithNullMagnitude.hxx:
+
+/usr/include/opencascade/Handle_gp_VectorWithNullMagnitude.hxx:
+
+/usr/include/opencascade/GeomAdaptor_Curve.hxx:
+
+/usr/include/opencascade/Handle_Geom_Curve.hxx:
+
+/usr/include/opencascade/Handle_Geom_Geometry.hxx:
+
+/usr/include/opencascade/GeomAbs_CurveType.hxx:
+
+/usr/include/opencascade/Adaptor3d_Curve.hxx:
+
+/usr/include/opencascade/GeomAbs_Shape.hxx:
+
+/usr/include/opencascade/Handle_Adaptor3d_HCurve.hxx:
+
+/usr/include/opencascade/Handle_Geom_BezierCurve.hxx:
+
+/usr/include/opencascade/Handle_Geom_BoundedCurve.hxx:
+
+/usr/include/opencascade/Handle_Geom_BSplineCurve.hxx:
+
+/usr/include/opencascade/GeomAdaptor_Curve.lxx:
+
+/usr/include/opencascade/Geom_Curve.hxx:
+
+/usr/include/opencascade/Geom_Geometry.hxx:
+
+/usr/include/opencascade/Handle_Adaptor3d_HCurveOnSurface.hxx:
+
+/usr/include/opencascade/BRepLib_MakeVertex.hxx:
+
+/usr/include/opencascade/BRepLib_MakeShape.hxx:
+
+/usr/include/opencascade/BRepLib_Command.hxx:
+
+/usr/include/opencascade/BRepLib_ShapeModification.hxx:
+
+/usr/include/opencascade/BRep_Builder.hxx:
+
+/usr/include/opencascade/TopoDS_Builder3D.hxx:
+
+/usr/include/opencascade/TopoDS_Builder.hxx:
+
+/usr/include/opencascade/Handle_Geom_Surface.hxx:
+
+/usr/include/opencascade/Handle_Poly_Triangulation.hxx:
+
+/usr/include/opencascade/Handle_Poly_Polygon3D.hxx:
+
+/usr/include/opencascade/Handle_Poly_PolygonOnTriangulation.hxx:
+
+/usr/include/opencascade/Handle_Geom2d_Curve.hxx:
+
+/usr/include/opencascade/Handle_Geom2d_Geometry.hxx:
+
+/usr/include/opencascade/Handle_Poly_Polygon2D.hxx:
+
+/usr/include/opencascade/BRep_Tool.hxx:
+
+/usr/include/opencascade/Geom_Surface.hxx:
+
+/usr/include/opencascade/Precision.hxx:
+
+/usr/include/opencascade/Precision.lxx:
+
+/usr/include/opencascade/TopExp.hxx:
+
+/usr/include/opencascade/TopExp_Explorer.hxx:
+
+/usr/include/opencascade/TopExp_Stack.hxx:
+
+/usr/include/opencascade/TopExp_Explorer.lxx:
+
+/usr/include/opencascade/TopoDS_Iterator.hxx:
+
+/usr/include/opencascade/TopoDS_ListIteratorOfListOfShape.hxx:
+
+/usr/include/opencascade/TCollection_ListIterator.lxx:
+
+/usr/include/opencascade/TopoDS_Iterator.lxx:
+
+/usr/include/opencascade/Standard_NoSuchObject.hxx:
+
+/usr/include/opencascade/Handle_Standard_NoSuchObject.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Transition.hxx:
+
+/usr/include/opencascade/TopOpeBRep_EdgesIntersector.hxx:
+
+/usr/include/opencascade/Handle_BRepAdaptor_HSurface.hxx:
+
+/usr/include/opencascade/Handle_Adaptor3d_HSurface.hxx:
+
+/usr/include/opencascade/GeomAbs_SurfaceType.hxx:
+
+/usr/include/opencascade/IntRes2d_Domain.hxx:
+
+/usr/include/opencascade/IntRes2d_Domain.lxx:
+
+/usr/include/opencascade/Geom2dAdaptor_Curve.hxx:
+
+/usr/include/opencascade/Adaptor2d_Curve2d.hxx:
+
+/usr/include/opencascade/Handle_Adaptor2d_HCurve2d.hxx:
+
+/usr/include/opencascade/Handle_Geom2d_BezierCurve.hxx:
+
+/usr/include/opencascade/Handle_Geom2d_BoundedCurve.hxx:
+
+/usr/include/opencascade/Handle_Geom2d_BSplineCurve.hxx:
+
+/usr/include/opencascade/Geom2dAdaptor_Curve.lxx:
+
+/usr/include/opencascade/Geom2d_Curve.hxx:
+
+/usr/include/opencascade/Geom2d_Geometry.hxx:
+
+/usr/include/opencascade/Geom2dInt_GInter.hxx:
+
+/usr/include/opencascade/IntCurve_IntConicConic.hxx:
+
+/usr/include/opencascade/IntCurve_IntImpConicParConic.hxx:
+
+/usr/include/opencascade/IntRes2d_Intersection.hxx:
+
+/usr/include/opencascade/IntRes2d_SequenceOfIntersectionPoint.hxx:
+
+/usr/include/opencascade/TCollection_BaseSequence.hxx:
+
+/usr/include/opencascade/TCollection_BaseSequence.lxx:
+
+/usr/include/opencascade/Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionPoint.hxx:
+
+/usr/include/opencascade/Handle_TCollection_SeqNode.hxx:
+
+/usr/include/opencascade/TCollection_Sequence.lxx:
+
+/usr/include/opencascade/IntRes2d_SequenceOfIntersectionSegment.hxx:
+
+/usr/include/opencascade/Handle_IntRes2d_SequenceNodeOfSequenceOfIntersectionSegment.hxx:
+
+/usr/include/opencascade/IntRes2d_Intersection.lxx:
+
+/usr/include/opencascade/StdFail_NotDone.hxx:
+
+/usr/include/opencascade/Handle_StdFail_NotDone.hxx:
+
+/usr/include/opencascade/IntCurve_IntConicConic.lxx:
+
+/usr/include/opencascade/Geom2dInt_TheIntConicCurveOfGInter.hxx:
+
+/usr/include/opencascade/IntCurve_IntConicCurveGen.lxx:
+
+/usr/include/opencascade/Geom2dInt_TheIntersectorOfTheIntConicCurveOfGInter.hxx:
+
+/usr/include/opencascade/gp_Lin2d.hxx:
+
+/usr/include/opencascade/gp_Lin2d.lxx:
+
+/usr/include/opencascade/gp_Circ2d.hxx:
+
+/usr/include/opencascade/gp_Ax22d.hxx:
+
+/usr/include/opencascade/gp_Ax22d.lxx:
+
+/usr/include/opencascade/gp_Circ2d.lxx:
+
+/usr/include/opencascade/gp_Elips2d.hxx:
+
+/usr/include/opencascade/gp_Elips2d.lxx:
+
+/usr/include/opencascade/gp_Hypr2d.hxx:
+
+/usr/include/opencascade/gp_Hypr2d.lxx:
+
+/usr/include/opencascade/gp_Parab2d.hxx:
+
+/usr/include/opencascade/gp_Parab2d.lxx:
+
+/usr/include/opencascade/IntCurve_IConicTool.hxx:
+
+/usr/include/opencascade/Geom2dInt_TheIntPCurvePCurveOfGInter.hxx:
+
+/usr/include/opencascade/IntCurve_IntCurveCurveGen.lxx:
+
+/usr/include/opencascade/TopOpeBRep_SequenceOfPoint2d.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d.hxx:
+
+/usr/include/opencascade/TopOpeBRep_P2Dstatus.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Config.hxx:
+
+/usr/include/opencascade/TopOpeBRep_Point2d.hxx:
+
+/usr/include/opencascade/IntRes2d_IntersectionPoint.hxx:
+
+/usr/include/opencascade/IntRes2d_Transition.hxx:
+
+/usr/include/opencascade/IntRes2d_Position.hxx:
+
+/usr/include/opencascade/IntRes2d_TypeTrans.hxx:
+
+/usr/include/opencascade/IntRes2d_Situation.hxx:
+
+/usr/include/opencascade/IntRes2d_Transition.lxx:
+
+/usr/include/opencascade/IntRes2d_IntersectionPoint.lxx:
+
+/usr/include/opencascade/Handle_TopOpeBRep_Hctxff2d.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRep_Hctxee2d.hxx:
+
+/usr/include/opencascade/TopOpeBRep_Point2d.lxx:
+
+/usr/include/opencascade/TopOpeBRep_define.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_define.hxx:
+
+/usr/include/opencascade/TopOpeBRepTool_define.hxx:
+
+/usr/include/opencascade/TopTools_MapIteratorOfMapOfShape.hxx:
+
+/usr/include/opencascade/TCollection_BasicMapIterator.hxx:
+
+/usr/include/opencascade/TCollection_BasicMapIterator.lxx:
+
+/usr/include/opencascade/TopTools_ListIteratorOfListOfShape.hxx:
+
+/usr/include/opencascade/TopTools_IndexedMapOfShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape.hxx:
+
+/usr/include/opencascade/TopTools_IndexedMapOfOrientedShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape.hxx:
+
+/usr/include/opencascade/TopTools_DataMapOfShapeShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeShape.hxx:
+
+/usr/include/opencascade/TopTools_DataMapOfShapeInteger.hxx:
+
+/usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger.hxx:
+
+/usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeShape.hxx:
+
+/usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeInteger.hxx:
+
+/usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfShapeListOfShape.hxx:
+
+/usr/include/opencascade/TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger.hxx:
+
+/usr/include/opencascade/Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger.hxx:
+
+/usr/include/opencascade/TopTools_IndexedDataMapOfShapeListOfShape.hxx:
+
+/usr/include/opencascade/Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape.hxx:
+
+/usr/include/opencascade/TopTools_DataMapOfOrientedShapeInteger.hxx:
+
+/usr/include/opencascade/TCollection_AsciiString.hxx:
+
+/usr/include/opencascade/Standard_PCharacter.hxx:
+
+/usr/include/opencascade/Standard_IStream.hxx:
+
+/usr/include/opencascade/TCollection_AsciiString.lxx:
+
+/usr/include/opencascade/TopOpeBRepDS_ListIteratorOfListOfInterference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_Interference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_ListNodeOfListOfInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_ListOfInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Interference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Kind.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_ShapeShapeInterference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_ShapeShapeInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_CurvePointInterference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_CurvePointInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_EdgeVertexInterference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_EdgeVertexInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_FaceEdgeInterference.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_FaceEdgeInterference.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_InterferenceIterator.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_HDataStructure.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_HDataStructure.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_DataStructure.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_MapOfSurface.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_MapOfCurve.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_MapOfPoint.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_MapOfShapeData.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Point.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Surface.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_Curve.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_ShapeSurface.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_IndexedDataMapOfShapeWithState.hxx:
+
+/usr/include/opencascade/Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState.hxx:
+
+/usr/include/opencascade/TopOpeBRepDS_PDataStructure.hxx:
+
+/usr/include/opencascade/TopoDS.hxx:
+
+/usr/include/opencascade/TopoDS.lxx:
+
+/usr/include/opencascade/Standard_TypeMismatch.hxx:
+
+/usr/include/opencascade/Handle_Standard_TypeMismatch.hxx:

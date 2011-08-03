@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/342/dropsexport/windows
+END
+dropsexp.sln
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/342/dropsexport/windows/dropsexp.sln
+END
+dropsexp.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/342/dropsexport/windows/dropsexp.vcproj
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/342/dropsexport/windows/Makefile.am
+END
+postBuild.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/342/dropsexport/windows/postBuild.bat
+END

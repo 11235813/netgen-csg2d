@@ -1,0 +1,1 @@
+parallelfunc.o: parallelfunc.cpp

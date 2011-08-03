@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/netgen-mesher/!svn/ver/282/netgen/doc
+END
+ng4.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/netgen-mesher/!svn/ver/282/netgen/doc/ng4.pdf
+END
+ng4.tex
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/netgen-mesher/!svn/ver/282/netgen/doc/ng4.tex
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/43/netgen/doc/Makefile.am
+END

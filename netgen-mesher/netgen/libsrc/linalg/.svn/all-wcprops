@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/linalg
+END
+densemat.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/linalg/densemat.cpp
+END
+opti.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/71/netgen/libsrc/linalg/opti.hpp
+END
+bfgs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/linalg/bfgs.cpp
+END
+polynomial.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/linalg/polynomial.cpp
+END
+densemat.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/linalg/densemat.hpp
+END
+linopt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/linalg/linopt.cpp
+END
+vector.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/175/netgen/libsrc/linalg/vector.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/linalg/Makefile.am
+END
+linsearch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/linalg/linsearch.cpp
+END
+polynomial.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/linalg/polynomial.hpp
+END
+linalg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/linalg/linalg.hpp
+END

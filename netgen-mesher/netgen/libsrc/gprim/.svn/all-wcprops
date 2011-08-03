@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/403/netgen/libsrc/gprim
+END
+spline.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/402/netgen/libsrc/gprim/spline.hpp
+END
+geomops2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/gprim/geomops2.hpp
+END
+transform3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/394/netgen/libsrc/gprim/transform3d.cpp
+END
+adtree.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/403/netgen/libsrc/gprim/adtree.cpp
+END
+geomobjects.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/geomobjects.hpp
+END
+splinegeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/netgen-mesher/!svn/ver/366/netgen/libsrc/gprim/splinegeometry.cpp
+END
+transform3d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/transform3d.hpp
+END
+adtree.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/gprim/adtree.hpp
+END
+splinegeometry.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/gprim/splinegeometry.hpp
+END
+geom2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/gprim/geom2d.cpp
+END
+geomtest3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/157/netgen/libsrc/gprim/geomtest3d.cpp
+END
+geomops.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/geomops.hpp
+END
+geom3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/gprim/geom3d.cpp
+END
+geom2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/gprim/geom2d.hpp
+END
+gprim.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/gprim.hpp
+END
+geomtest3d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/geomtest3d.hpp
+END
+geom3d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/gprim/geom3d.hpp
+END
+geomfuncs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/gprim/geomfuncs.cpp
+END
+geomobjects2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/gprim/geomobjects2.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/gprim/Makefile.am
+END
+spline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/402/netgen/libsrc/gprim/spline.cpp
+END
+geomfuncs.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/gprim/geomfuncs.hpp
+END

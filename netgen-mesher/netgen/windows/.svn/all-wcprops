@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/netgen-mesher/!svn/ver/419/netgen/windows
+END
+geom2d.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/380/netgen/windows/geom2d.vcproj
+END
+netgen.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/340/netgen/windows/netgen.vcproj
+END
+netgen.rc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/netgen-mesher/!svn/ver/419/netgen/windows/netgen.rc
+END
+postBuild_nglib.bat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/292/netgen/windows/postBuild_nglib.bat
+END
+netgen-4.9.14.sln
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/380/netgen/windows/netgen-4.9.14.sln
+END
+nglib.sln
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/netgen-mesher/!svn/ver/213/netgen/windows/nglib.sln
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/netgen-mesher/!svn/ver/214/netgen/windows/Makefile.am
+END
+netgen.ico
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/netgen-mesher/!svn/ver/156/netgen/windows/netgen.ico
+END
+postBuild_netgen.bat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/292/netgen/windows/postBuild_netgen.bat
+END
+netgen.sln
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/netgen-mesher/!svn/ver/196/netgen/windows/netgen.sln
+END
+netgen-4.9.14.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/380/netgen/windows/netgen-4.9.14.vcproj
+END
+nglib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/340/netgen/windows/nglib.vcproj
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/netgen-mesher/!svn/ver/418/netgen/windows/resource.h
+END

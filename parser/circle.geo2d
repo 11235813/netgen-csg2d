@@ -1,0 +1,6 @@
+#A simple circle
+algebraic2d
+planefigure circle1 = circle (100, 100; 100);
+
+tlo circle1;
+

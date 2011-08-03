@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/stlgeom
+END
+stltopology.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/396/netgen/libsrc/stlgeom/stltopology.cpp
+END
+stltool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/stlgeom/stltool.cpp
+END
+stltopology.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/stlgeom/stltopology.hpp
+END
+stlpkg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/stlgeom/stlpkg.cpp
+END
+stltool.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/stlgeom/stltool.hpp
+END
+stlline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/stlgeom/stlline.cpp
+END
+stlgeom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/stlgeom/stlgeom.cpp
+END
+vsstl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/stlgeom/vsstl.cpp
+END
+stlline.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/stlgeom/stlline.hpp
+END
+stlgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/stlgeom/stlgeom.hpp
+END
+vsstl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/stlgeom/vsstl.hpp
+END
+stlgeommesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/stlgeom/stlgeommesh.cpp
+END
+meshstlsurface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/stlgeom/meshstlsurface.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/364/netgen/libsrc/stlgeom/Makefile.am
+END
+stlgeomchart.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/stlgeom/stlgeomchart.cpp
+END
+meshstlsurface.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/stlgeom/meshstlsurface.hpp
+END

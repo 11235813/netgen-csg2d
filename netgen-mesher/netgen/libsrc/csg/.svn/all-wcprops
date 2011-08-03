@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/csg
+END
+csgparser.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/csgparser.hpp
+END
+algprim.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/302/netgen/libsrc/csg/algprim.hpp
+END
+meshsurf.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/csg/meshsurf.hpp
+END
+geoml.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/geoml.hpp
+END
+curve2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/curve2d.cpp
+END
+solid.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/302/netgen/libsrc/csg/solid.cpp
+END
+identify.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/201/netgen/libsrc/csg/identify.cpp
+END
+explicitcurve2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/explicitcurve2d.cpp
+END
+csgeom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/386/netgen/libsrc/csg/csgeom.cpp
+END
+csgpkg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/csg/csgpkg.cpp
+END
+curve2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/curve2d.hpp
+END
+solid.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/solid.hpp
+END
+identify.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/csg/identify.hpp
+END
+explicitcurve2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/explicitcurve2d.hpp
+END
+csg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/csg/csg.hpp
+END
+spline3d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/spline3d.cpp
+END
+bspline2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/bspline2d.cpp
+END
+csgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/csg/csgeom.hpp
+END
+vscsg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/387/netgen/libsrc/csg/vscsg.cpp
+END
+spline3d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/spline3d.hpp
+END
+polyhedra.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/csg/polyhedra.cpp
+END
+surface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/csg/surface.cpp
+END
+triapprox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/csg/triapprox.cpp
+END
+manifold.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/csg/manifold.cpp
+END
+brick.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/csg/brick.cpp
+END
+vscsg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/csg/vscsg.hpp
+END
+polyhedra.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/polyhedra.hpp
+END
+surface.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/302/netgen/libsrc/csg/surface.hpp
+END
+triapprox.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/triapprox.hpp
+END
+manifold.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/manifold.hpp
+END
+brick.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/brick.hpp
+END
+extrusion.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/302/netgen/libsrc/csg/extrusion.cpp
+END
+extrusion.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/extrusion.hpp
+END
+revolution.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/305/netgen/libsrc/csg/revolution.cpp
+END
+revolution.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/revolution.hpp
+END
+edgeflw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/269/netgen/libsrc/csg/edgeflw.cpp
+END
+specpoin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/388/netgen/libsrc/csg/specpoin.cpp
+END
+gencyl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/49/netgen/libsrc/csg/gencyl.cpp
+END
+singularref.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/144/netgen/libsrc/csg/singularref.cpp
+END
+edgeflw.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/edgeflw.hpp
+END
+specpoin.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/csg/specpoin.hpp
+END
+genmesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/csg/genmesh.cpp
+END
+gencyl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/gencyl.hpp
+END
+singularref.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/224/netgen/libsrc/csg/singularref.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/csg/Makefile.am
+END
+csgparser.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/364/netgen/libsrc/csg/csgparser.cpp
+END
+algprim.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/389/netgen/libsrc/csg/algprim.cpp
+END
+meshsurf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/csg/meshsurf.cpp
+END

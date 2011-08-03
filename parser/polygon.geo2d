@@ -1,0 +1,6 @@
+#test polygon primitive
+algebraic2d
+
+planefigure p = polygon(5; 0, 20; 40, 20; 40, 50; 0, 50);
+
+tlo p;

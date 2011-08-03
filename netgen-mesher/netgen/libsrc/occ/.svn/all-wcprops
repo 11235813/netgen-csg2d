@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/occ
+END
+occpkg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/350/netgen/libsrc/occ/occpkg.cpp
+END
+Partition_Loop3d.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/occ/Partition_Loop3d.cxx
+END
+vsocc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/occ/vsocc.cpp
+END
+Partition_Loop3d.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Loop3d.hxx
+END
+occconstruction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/91/netgen/libsrc/occ/occconstruction.cpp
+END
+Partition_Loop3d.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop3d.ixx
+END
+Partition_Loop3d.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop3d.jxx
+END
+utilities.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/8/netgen/libsrc/occ/utilities.h
+END
+occmeshsurf.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/426/netgen/libsrc/occ/occmeshsurf.cpp
+END
+Partition_Inter3d.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/occ/Partition_Inter3d.cxx
+END
+Partition_Loop.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/occ/Partition_Loop.cxx
+END
+vsocc.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/occ/vsocc.hpp
+END
+occmeshsurf.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/occ/occmeshsurf.hpp
+END
+Partition_Inter3d.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Inter3d.hxx
+END
+Partition_Inter3d.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Inter3d.ixx
+END
+Partition_Loop.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Loop.hxx
+END
+Partition_Inter3d.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Inter3d.jxx
+END
+Partition_Loop.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop.ixx
+END
+Partition_Loop.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop.jxx
+END
+Partition_Spliter.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/occ/Partition_Spliter.cxx
+END
+Partition_Spliter.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Spliter.hxx
+END
+Partition_Spliter.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Spliter.ixx
+END
+Partition_Spliter.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Spliter.jxx
+END
+Partition_Loop2d.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/occ/Partition_Loop2d.cxx
+END
+occgenmesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/426/netgen/libsrc/occ/occgenmesh.cpp
+END
+occgeom.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/occ/occgeom.cpp
+END
+Partition_Loop2d.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Loop2d.hxx
+END
+Partition_Loop2d.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop2d.ixx
+END
+Partition_Loop2d.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Loop2d.jxx
+END
+Partition_Inter2d.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/8/netgen/libsrc/occ/Partition_Inter2d.cxx
+END
+occgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/occ/occgeom.hpp
+END
+Partition_Inter2d.hxx
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/netgen-mesher/!svn/ver/129/netgen/libsrc/occ/Partition_Inter2d.hxx
+END
+Partition_Inter2d.ixx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Inter2d.ixx
+END
+Partition_Inter2d.jxx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/7/netgen/libsrc/occ/Partition_Inter2d.jxx
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/364/netgen/libsrc/occ/Makefile.am
+END

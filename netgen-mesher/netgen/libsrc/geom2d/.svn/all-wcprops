@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/geom2d
+END
+geom2dmesh.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/geom2d/geom2dmesh.hpp
+END
+geom2dpkg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/379/netgen/libsrc/geom2d/geom2dpkg.cpp
+END
+geometry2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/390/netgen/libsrc/geom2d/geometry2d.cpp
+END
+spline2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/geom2d/spline2d.hpp
+END
+geometry2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/geom2d/geometry2d.hpp
+END
+vsgeom2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/geom2d/vsgeom2d.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/geom2d/Makefile.am
+END
+geom2dmesh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/371/netgen/libsrc/geom2d/geom2dmesh.cpp
+END
+vsgeom2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/geom2d/vsgeom2d.hpp
+END
+genmesh2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/428/netgen/libsrc/geom2d/genmesh2d.cpp
+END
+splinegeometry2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/geom2d/splinegeometry2.hpp
+END

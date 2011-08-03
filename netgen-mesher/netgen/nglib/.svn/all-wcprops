@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/netgen-mesher/!svn/ver/425/netgen/nglib
+END
+nglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/338/netgen/nglib/nglib.h
+END
+ng_vol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/339/netgen/nglib/ng_vol.cpp
+END
+ng_stl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/339/netgen/nglib/ng_stl.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/netgen-mesher/!svn/ver/321/netgen/nglib/Makefile.am
+END
+ng_occ.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/321/netgen/nglib/ng_occ.cpp
+END
+hinge.stl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/262/netgen/nglib/hinge.stl
+END
+cube.surf
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/298/netgen/nglib/cube.surf
+END
+nglib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/425/netgen/nglib/nglib.cpp
+END

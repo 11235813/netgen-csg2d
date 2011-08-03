@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/netgen-mesher/!svn/ver/425/netgen/ng
+END
+dialog.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/364/netgen/ng/dialog.tcl
+END
+menustat.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/364/netgen/ng/menustat.tcl
+END
+ngtesting.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/303/netgen/ng/ngtesting.tcl
+END
+parameters.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/26/netgen/ng/parameters.tcl
+END
+ng.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/netgen-mesher/!svn/ver/415/netgen/ng/ng.tcl
+END
+netgen.ocf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/243/netgen/ng/netgen.ocf
+END
+ngpkg.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/425/netgen/ng/ngpkg.cpp
+END
+ng_acis.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/1/netgen/ng/ng_acis.hpp
+END
+parallelfunc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/netgen-mesher/!svn/ver/422/netgen/ng/parallelfunc.cpp
+END
+variables.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/339/netgen/ng/variables.tcl
+END
+stlgeom.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/364/netgen/ng/stlgeom.tcl
+END
+sockets.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/26/netgen/ng/sockets.tcl
+END
+occgeom.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/398/netgen/ng/occgeom.tcl
+END
+ngicon.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/26/netgen/ng/ngicon.tcl
+END
+nghelp.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/149/netgen/ng/nghelp.tcl
+END
+csgeom.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/350/netgen/ng/csgeom.tcl
+END
+parallelfunc.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/netgen-mesher/!svn/ver/406/netgen/ng/parallelfunc.hpp
+END
+parallelinterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/416/netgen/ng/parallelinterface.cpp
+END
+demoview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/172/netgen/ng/demoview.cpp
+END
+togl_1_7.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/netgen-mesher/!svn/ver/41/netgen/ng/togl_1_7.h
+END
+demoview.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/173/netgen/ng/demoview.hpp
+END
+onetcl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/netgen-mesher/!svn/ver/407/netgen/ng/onetcl.cpp
+END
+acisgeom.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/415/netgen/ng/acisgeom.tcl
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/381/netgen/ng/Makefile.am
+END
+ngvisual.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/netgen-mesher/!svn/ver/303/netgen/ng/ngvisual.tcl
+END
+ngappinit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/netgen-mesher/!svn/ver/422/netgen/ng/ngappinit.cpp
+END
+drawing.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/369/netgen/ng/drawing.tcl
+END
+ngshell.tcl
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/303/netgen/ng/ngshell.tcl
+END

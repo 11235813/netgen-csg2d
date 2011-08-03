@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/netgen-mesher/!svn/ver/215/demoapp/windows
+END
+demoapp.sln
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/197/demoapp/windows/demoapp.sln
+END
+demoapp.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/197/demoapp/windows/demoapp.vcproj
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/215/demoapp/windows/Makefile.am
+END
+postBuild.bat
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/197/demoapp/windows/postBuild.bat
+END

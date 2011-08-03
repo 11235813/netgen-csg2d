@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/319/netgen/windows/Netgen_Installer
+END
+Netgen_Installer_x64.bat
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/Netgen_Installer_x64.bat
+END
+Netgen_Installer_Win32.bat
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/Netgen_Installer_Win32.bat
+END
+netgen_installer.dat
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/netgen-mesher/!svn/ver/319/netgen/windows/Netgen_Installer/netgen_installer.dat
+END
+netgen_installer.nsi
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/netgen-mesher/!svn/ver/319/netgen/windows/Netgen_Installer/netgen_installer.nsi
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/Makefile.am
+END
+Netgen_Installer_All.bat
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/Netgen_Installer_All.bat
+END
+README!.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/README!.TXT
+END

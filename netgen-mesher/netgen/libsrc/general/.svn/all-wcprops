@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/general
+END
+symbolta.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/symbolta.hpp
+END
+optmem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/403/netgen/libsrc/general/optmem.cpp
+END
+parthreads.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/365/netgen/libsrc/general/parthreads.hpp
+END
+autoptr.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/autoptr.hpp
+END
+seti.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/seti.cpp
+END
+optmem.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/optmem.hpp
+END
+seti.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/seti.hpp
+END
+hashtabl.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/hashtabl.cpp
+END
+sort.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/253/netgen/libsrc/general/sort.cpp
+END
+table.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/table.cpp
+END
+hashtabl.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/hashtabl.hpp
+END
+sort.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/253/netgen/libsrc/general/sort.hpp
+END
+flags.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/425/netgen/libsrc/general/flags.cpp
+END
+table.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/table.hpp
+END
+flags.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/general/flags.hpp
+END
+autodiff.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/autodiff.hpp
+END
+spbita2d.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/general/spbita2d.cpp
+END
+mpi_interface.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/mpi_interface.hpp
+END
+stack.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/stack.hpp
+END
+mystring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/mystring.cpp
+END
+spbita2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/spbita2d.hpp
+END
+netgenout.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/netgenout.hpp
+END
+bitarray.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/bitarray.cpp
+END
+array.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/53/netgen/libsrc/general/array.cpp
+END
+template.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/400/netgen/libsrc/general/template.hpp
+END
+mystring.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/general/mystring.hpp
+END
+profiler.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/414/netgen/libsrc/general/profiler.cpp
+END
+bitarray.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/bitarray.hpp
+END
+ngexception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/ngexception.cpp
+END
+array.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/general/array.hpp
+END
+dynamicmem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/201/netgen/libsrc/general/dynamicmem.cpp
+END
+myadt.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/207/netgen/libsrc/general/myadt.hpp
+END
+profiler.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/profiler.hpp
+END
+ngexception.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/general/ngexception.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/316/netgen/libsrc/general/Makefile.am
+END
+dynamicmem.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/netgen-mesher/!svn/ver/174/netgen/libsrc/general/dynamicmem.hpp
+END
+symbolta.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/symbolta.cpp
+END
+parthreads.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/general/parthreads.cpp
+END

@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/netgen-mesher/!svn/ver/381/netgen/libsrc/include
+END
+meshing.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/meshing.hpp
+END
+incvis.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/include/incvis.hpp
+END
+parallel.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/parallel.hpp
+END
+nginterface_v2.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/netgen-mesher/!svn/ver/345/netgen/libsrc/include/nginterface_v2.hpp
+END
+visual.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/visual.hpp
+END
+linalg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/linalg.hpp
+END
+stlgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/stlgeom.hpp
+END
+opti.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/65/netgen/libsrc/include/opti.hpp
+END
+occgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/occgeom.hpp
+END
+csg.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/csg.hpp
+END
+parallelinterface.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/netgen-mesher/!svn/ver/361/netgen/libsrc/include/parallelinterface.hpp
+END
+myadt.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/myadt.hpp
+END
+gprim.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/gprim.hpp
+END
+geometry2d.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/geometry2d.hpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/netgen-mesher/!svn/ver/122/netgen/libsrc/include/Makefile.am
+END
+nginterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/netgen-mesher/!svn/ver/381/netgen/libsrc/include/nginterface.h
+END
+mystdlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/360/netgen/libsrc/include/mystdlib.h
+END
+mydefs.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/378/netgen/libsrc/include/mydefs.hpp
+END
+acisgeom.hpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/netgen-mesher/!svn/ver/1/netgen/libsrc/include/acisgeom.hpp
+END

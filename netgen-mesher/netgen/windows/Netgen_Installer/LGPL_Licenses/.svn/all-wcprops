@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/LGPL_Licenses
+END
+LGPL_French.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/LGPL_Licenses/LGPL_French.txt
+END
+LGPL_English.txt
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/LGPL_Licenses/LGPL_English.txt
+END
+LGPL_German.txt
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/LGPL_Licenses/LGPL_German.txt
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/netgen-mesher/!svn/ver/295/netgen/windows/Netgen_Installer/LGPL_Licenses/Makefile.am
+END
