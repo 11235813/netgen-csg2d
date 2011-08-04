@@ -90,7 +90,6 @@ if { [catch { load libgeom2dvis[info sharedlibextension] Ng_Geom2d } result ] } 
     puts "error: $result"
 }
 
-
 catch { source ${ngdir}/csgeom.tcl }
 catch { source ${ngdir}/stlgeom.tcl }
 
@@ -286,4 +285,9 @@ if { [file exists startup.tcl] } {
 
 catch { source ${ngdir}/demoapp.tcl } 
 catch { source ${ngdir}/dropsexp.tcl } 
+
+if { [catch { load libngcsg2d[info sharedlibextension] Ng_Csg2d } result ] } {
+    puts "cannot load csg 2d module"
+    puts "error: $result"
+}
 
