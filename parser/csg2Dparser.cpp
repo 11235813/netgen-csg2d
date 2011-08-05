@@ -8,8 +8,7 @@
       { TOK_OR,      "or" },
       { TOK_AND,     "and" },
       { TOK_NOT,     "not" },
-/*    { TOK_EDGE,     "edge" },
-      { TOK_POINT,    "point" },
+/*    { TOK_POINT,    "point" },
       { TOK_IDENTIFY, "identify" },
       { TOK_BOUNDARYCONDITION, "boundarycondition" },
       { TOK_BOUNDARYCONDITIONNAME, "boundaryconditionname" },
@@ -22,7 +21,6 @@
     {
       { TOK_POLYGON, "polygon" },
 	{ TOK_CIRCLE, "circle" },
-//	{ TOK_EDGE, "edge" },
 	{ PRIMITIVE_TYPE(0), 0 }
     };
 
@@ -238,20 +236,7 @@
 	     PlaneFigure *pf = new PlaneFigure(nprim);
 	     return pf;
          }
-    /*   case TOK_EDGE:
-         {
-           double x, y;
-           scan.ReadNext();
-           scan >> '(' >> x >> ',' >> y >> ';';
-           gp_Pnt2d P1(x, y);
-           scan >> x >> ',' >> y >> ')';
-           gp_Pnt2d P2(x, y);
-           TopoDS_Shape nprim = MakeEdge(P1, P2);
-           PlaneFigure *pf = new PlaneFigure(nprim);
-           return pf;
-         }
-     */
-	   default:
+	 default:
 	   {
 	     scan.Error (string ("unknown primary ") + scan.GetStringValue());
 	   }

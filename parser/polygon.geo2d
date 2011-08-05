@@ -1,6 +1,12 @@
 #test polygon primitive
 algebraic2d
 
-planefigure p = polygon(5; 0, 20; 40, 20; 40, 50; 0, 50);
+planefigure p1 = polygon(4; 0, 0; 0, 35; -10, 35; -10, 0);
+planefigure p2 = polygon(5; 0, 0; 20, 0; 25, 40; 15, 60; 0, 35);
 
-tlo p;
+planefigure union = p1 or p2;
+
+#tlo p2;
+#tlo p1;
+tlo union;
+

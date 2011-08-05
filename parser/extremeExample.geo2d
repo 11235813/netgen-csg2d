@@ -1,0 +1,20 @@
+algebraic2d
+planefigure r1 = polygon (4; 6, 2; 7, 2; 7, 5; 6, 5);
+planefigure r2 = polygon (4; 7, 2; 8, 2; 8, 5; 7, 5);
+planefigure diff = r2 and not r1;
+
+#planefigure op = r1 and not c1;
+#planefigure op = not c1 and r1;
+
+#planefigure op = r1 or not c1;
+#planefigure op = not c1 or r1;
+
+#planefigure op = not r1 and not c1;
+#planefigure op = not c1 and not r1;
+
+#planefigure op = not r1 or not c1;
+#planefigure op = (not c1 or not r1);
+
+#tlo diff;
+tlo r1;
+tlo r2;

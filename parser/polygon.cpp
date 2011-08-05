@@ -31,7 +31,7 @@ MakePolygon(const TColgp_Array1OfPnt * aarray)
         //construct an open polygon
         BRepBuilderAPI_MakePolygon apolygon(P1, P2);
         //take the next points and add them to the wire
-	  for(i = lower + 2; i < upper; i ++)
+	  for(i = lower + 2; i <= upper; i ++)
         {
           gp_Pnt P = aarray->Value(i);
           apolygon.Add(P);

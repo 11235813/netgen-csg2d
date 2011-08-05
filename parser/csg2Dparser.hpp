@@ -2,7 +2,6 @@
 #include "planefigure.cpp"
 #include "polygon.cpp"
 #include "circle.cpp"
-#include "edge.cpp"
 
 #include <TopoDS_Shape.hxx>
 #include <TopoDS_Wire.hxx>
@@ -49,9 +48,8 @@ using namespace std;
 
   enum PRIMITIVE_TYPE
     {
-	  TOK_POLYGON = 1,
+	TOK_POLYGON = 1,
         TOK_CIRCLE
-//        TOK_EDGE
     };
 
   struct primstruct
