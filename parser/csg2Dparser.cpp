@@ -14,14 +14,15 @@
       { TOK_BOUNDARYCONDITIONNAME, "boundaryconditionname" },
       { TOK_CONSTANT, "constant" },
 */
-      { TOKEN_TYPE(0), 0}
+      { TOKEN_TYPE(0), 0 }
     };
 
   static primstruct defprim[] =
     {
       { TOK_POLYGON, "polygon" },
-	{ TOK_CIRCLE, "circle" },
-	{ PRIMITIVE_TYPE(0), 0 }
+      { TOK_CIRCLE, "circle" },
+      { TOK_ELLIPSE, "ellipse" },
+      { PRIMITIVE_TYPE(0), 0 }
     };
 
   TopoDS_Shape geom;
@@ -229,12 +230,23 @@
          {
            double x, y, radius;
            scan.ReadNext();
-	     scan >> '(' >> x >> ',' >> y >> ';' >> radius >> ')';
-	     gp_Pnt2d center(x, y);
+	   scan >> '(' >> x >> ',' >> y >> ';' >> radius >> ')';
+	   gp_Pnt center(x, y, 0);
 
-	     TopoDS_Shape nprim = MakeCircle(center, radius);
-	     PlaneFigure *pf = new PlaneFigure(nprim);
-	     return pf;
+	   TopoDS_Shape nprim = MakeCircle(center, radius);
+	   PlaneFigure *pf = new PlaneFigure(nprim);
+	   return pf;
+         }
+         case TOK_ELLIPSE:
+         {
+           double x, y, MajorRadius, MinorRadius;
+           scan.ReadNext();
+           scan >> '(' >> x >> ',' >> y >> ';' >> MajorRadius >> ';' >> MinorRadius >> ')';
+           gp_Pnt center(x, y, 0);
+
+           TopoDS_Shape nprim = MakeEllipse(center, MajorRadius, MinorRadius);
+           PlaneFigure *pf = new PlaneFigure(nprim);
+           return pf;
          }
 	 default:
 	   {
