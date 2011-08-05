@@ -6,3 +6,6 @@ Makefile.in
 *.log
 *.lo
 *.la
+*.so
+*.libs
+*.status
