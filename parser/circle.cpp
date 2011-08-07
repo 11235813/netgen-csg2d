@@ -5,33 +5,34 @@
 /* Date:    07/19/2011                                                    */
 /*                                                                        */
 /**************************************************************************/
-#include <BRepBuilderAPI_MakeEdge.hxx>
-#include <BRepPrimAPI_MakeSphere.hxx>
-#include <BRepBuilderAPI_MakeFace.hxx>
-#include <BRepBuilderAPI_MakeWire.hxx>
 
-#include <gp_Pnt.hxx>
-#include <gp_Ax2.hxx>
-#include <gp_Circ.hxx>
-#include <gp_Dir.hxx>
+#include "csg2d.hpp"
 
-#include <TopoDS_Edge.hxx>
-#include <TopoDS_Wire.hxx>
-
-TopoDS_Shape
-MakeCircle(const gp_Pnt2d &P, const Standard_Real Radius)
+Circle :: Circle (const gp_Pnt &acenter, Standard_Real aradius)
 {
-  //create a circle represented in 3d
-  gp_Pnt center(P.X(), P.Y(), 0);
-  gp_Ax2 axis;
-  gp_Circ acircle(axis, Radius);
-  acircle.SetLocation(center);
+	center = acenter;
+	radius = aradius;
+}
 
-  TopoDS_Edge W = BRepBuilderAPI_MakeEdge(acircle);
+Circle :: ~Circle	()
+{
+;
+}
+
+TopoDS_Shape Circle :: MakeCircle ()
+{
+  /*
+   *	create a circle represented in 3d
+   */
+  gp_Ax2 axis;
+  gp_Circ acircle (axis, radius);
+  acircle.SetLocation (center);
+
+  TopoDS_Edge W = BRepBuilderAPI_MakeEdge (acircle);
   BRepBuilderAPI_MakeWire mkWire;
-  mkWire.Add(W);
-  TopoDS_Wire myWireProfile = mkWire.Wire();
-  TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace(myWireProfile);  
+  mkWire.Add (W);
+  TopoDS_Wire myWireProfile = mkWire.Wire ();
+  TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
   
   return myFaceProfile;
 }
