@@ -21,19 +21,19 @@ Circle :: ~Circle	()
 
 TopoDS_Shape Circle :: MakeCircle ()
 {
-  /*
-   *	create a circle represented in 3d
-   */
-  gp_Ax2 axis;
-  gp_Circ acircle (axis, radius);
-  acircle.SetLocation (center);
+	/*
+	 *	create a circle represented in 3d
+	 */
+	gp_Ax2 axis;
+	gp_Circ acircle (axis, radius);
+	acircle.SetLocation (center);
 
-  TopoDS_Edge W = BRepBuilderAPI_MakeEdge (acircle);
-  BRepBuilderAPI_MakeWire mkWire;
-  mkWire.Add (W);
-  TopoDS_Wire myWireProfile = mkWire.Wire ();
-  TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
-  
-  return myFaceProfile;
+	TopoDS_Edge W = BRepBuilderAPI_MakeEdge (acircle);
+	BRepBuilderAPI_MakeWire mkWire;
+	mkWire.Add (W);
+	TopoDS_Wire myWireProfile = mkWire.Wire ();
+	TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
+
+	return myFaceProfile;
 }
 

@@ -22,19 +22,19 @@ Ellipse :: ~Ellipse ()
 
 TopoDS_Shape Ellipse :: MakeEllipse ()
 {
-  /*
-   * create an ellipse represented in 3d
-   */
-  gp_Ax2 axis;
-  gp_Elips aellipse (axis, majorRadius, minorRadius);
-  aellipse.SetLocation (center);
+	/*
+	 * create an ellipse represented in 3d
+	 */
+	gp_Ax2 axis;
+	gp_Elips aellipse (axis, majorRadius, minorRadius);
+	aellipse.SetLocation (center);
 
-  TopoDS_Edge W = BRepBuilderAPI_MakeEdge (aellipse);
-  BRepBuilderAPI_MakeWire mkWire;
-  mkWire.Add (W);
-  TopoDS_Wire myWireProfile = mkWire.Wire ();
-  TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
-  
-  return myFaceProfile;
+	TopoDS_Edge W = BRepBuilderAPI_MakeEdge (aellipse);
+	BRepBuilderAPI_MakeWire mkWire;
+	mkWire.Add (W);
+	TopoDS_Wire myWireProfile = mkWire.Wire ();
+	TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
+
+	return myFaceProfile;
 }
 

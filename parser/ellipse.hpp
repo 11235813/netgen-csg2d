@@ -15,7 +15,7 @@ class Ellipse
 {
 protected:
 	gp_Pnt center;
-  Standard_Real majorRadius;
+	Standard_Real majorRadius;
 	Standard_Real minorRadius;
 
 public:
