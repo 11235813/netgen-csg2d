@@ -1,0 +1,5 @@
+algebraic2d
+
+planefigure ell = ellipse(0, 0; 10; 5);
+
+tlo ell;

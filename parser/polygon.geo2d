@@ -2,11 +2,12 @@
 algebraic2d
 
 planefigure p1 = polygon(4; 0, 0; 0, 35; -10, 35; -10, 0);
-planefigure p2 = polygon(5; 0, 0; 20, 0; 25, 40; 15, 60; 0, 35);
+planefigure p2 = polygon(5; -5, 0; 20, 0; 25, 40; 15, 60; -5, 35);
 
 planefigure union = p1 or p2;
+planefigure shape = translate(6, 4; union);
 
-#tlo p2;
-#tlo p1;
-tlo union;
+tlo p1;
+tlo p2;
+tlo shape;
 

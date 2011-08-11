@@ -1,0 +1,18 @@
+# CSG2d feature copy
+
+algebraic2d
+
+# define reference circle:
+planefigure circ1 = circle (30, 50; 9.5);
+
+# make copies:
+#planefigure circ2 = translate (2, 0; circ1);
+planefigure circ2 = circle(32, 50; 9.5);
+#planefigure cyls = multitranslate (0, 1, 0; 19; cylx);
+
+planefigure main = circ2 or circ1;
+
+#tlo main;
+tlo circ2;
+tlo circ1;
+

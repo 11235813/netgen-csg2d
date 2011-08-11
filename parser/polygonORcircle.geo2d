@@ -1,7 +1,7 @@
 algebraic2d
 
 planefigure square = polygon (4; 20, 20; 40, 20; 40, 40; 20, 40);
-planefigure c = circle (30, 40; 9.99999);
+planefigure c = circle (30, 40; 10);
 planefigure union = square or c;
 
 #tlo square;
