@@ -1,0 +1,10 @@
+Steps:
+
+1. install netgen by using the following link: http://goo.gl/gTUoV
+	Remarks: 
+		- don't forget to run configure with occ 
+		-	set the environment variables
+		
+2. in the parser/ folder:
+		- compile: make -f Makefile.am
+		- run netgen: use the path to the "netgen" executable. For example, if you've installed it in /opt/netgen/, you run: /opt/netgen/bin/netgen
