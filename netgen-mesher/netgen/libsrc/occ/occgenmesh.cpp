@@ -413,9 +413,14 @@ namespace netgen
          // Add the face colour to the mesh data
          Quantity_Color face_colour;
 
-         if(!(geom.face_colours.IsNull())
-            && (geom.face_colours->GetColor(face,XCAFDoc_ColorSurf,face_colour)))
+         if((!(geom.face_colours.IsNull())
+            && (geom.face_colours->GetColor(face,XCAFDoc_ColorSurf,face_colour))) 
+						|| geom.GetColorValid())
          {
+						if (geom.GetColorValid())
+							//face_colour = face_colour.Assign(geom.GetFaceColors()->Value(i3));
+							face_colour = face_colour.Assign(geom.GetFaceColors()[i3 - 1]);
+
             mesh.GetFaceDescriptor(facenr).SetSurfColour(Vec3d(face_colour.Red(),face_colour.Green(),face_colour.Blue()));
          }
          else

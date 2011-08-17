@@ -110,6 +110,9 @@
 #include "StlAPI_Writer.hxx"
 #include "STEPControl_StepModelType.hxx"
 
+//Cristina Precup -12/08/2011
+#include "Quantity_Array1OfColor.hxx"
+
 namespace netgen
 {
 #include "occmeshsurf.hpp"
@@ -192,6 +195,14 @@ namespace netgen
    class OCCGeometry : public NetgenGeometry
    {
       Point<3> center;
+			
+			//Cristina Precup - 12/08/2011
+			//Quantity_Color to make face colors available to the rest of the system
+//			Quantity_Color faceColors;
+		//	Quantity_Array1OfColor * faceColors;
+			Quantity_Color * faceColors;
+			bool color_valid;
+
 
    public:
       TopoDS_Shape shape;
@@ -241,6 +252,7 @@ namespace netgen
          wmap.Clear();
          emap.Clear();
          vmap.Clear();
+				 faceColors = NULL;
       }
 
 
@@ -296,6 +308,30 @@ namespace netgen
 
       void HealGeometry();
 
+			//Cristina Precup - 12/08/2011
+			//getters, setters for color_valid and faceColors
+			bool GetColorValid()
+			{ return color_valid; }
+
+			void SetColorValid (bool valid)
+			{ color_valid =  valid; }
+
+		/*Quantity_Array1OfColor * GetFaceColors()
+			{ return faceColors; }
+
+			void SetFaceColors (Quantity_Array1OfColor * color)
+			{ faceColors = color; }
+*/
+
+			Quantity_Color * GetFaceColors()
+			{ return faceColors; }
+
+			void SetFaceColors (Quantity_Color * color)
+			{
+				free (faceColors);
+				faceColors = color;
+			}
+		
       // Philippose - 15/01/2009
       // Sets the maximum mesh size for a given face
       // (Note: Local mesh size limited by the global max mesh size)
