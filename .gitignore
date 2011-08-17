@@ -3,6 +3,7 @@
 *.o
 Makefile
 Makefile.in
+*.Plo
 *.log
 *.lo
 *.la
