@@ -42,12 +42,7 @@ CSGScanner :: CSGScanner (istream & ascanin)
 	NTopLevelObjects = 0;
 	// set the default color to green
 	colorFlag = Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB);
-	//colorFlags = new Quantity_Color[10 * sizeof(Quantity_Color)];
-	//colorFlags = (Quantity_Color*) malloc (1 * sizeof (Quantity_Color));
 	colorFlags = NULL;
-
-	//for( int i = 0; i < 10; i ++)
-		//colorFlags[i] = Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB);
 }
 
 void CSGScanner :: ReadNext ()
@@ -284,7 +279,6 @@ PlaneFigure * ParsePrimary (CSGScanner & scan)
 				ParseChar(scan, '(');
 				gp_Vec vecLocation = ParseVector (scan);
 
-				cout<<endl<<"vector for translation: "<<vecLocation.Coord(1)<<","<<vecLocation.Coord(2)<<","<<vecLocation.Coord(3)<<endl;
 				ParseChar(scan, ';');
 				PlaneFigure * pf = ParsePlaneFigure(scan);
 				ParseChar(scan, ')');
@@ -457,9 +451,10 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 	abuilder.MakeCompound(geometry);
 	int NComponents = 0;
 	//retain the color of each TLO. If the color is not set, set it to the default GREEN
-	Quantity_Color * colorFlags_aux = new Quantity_Color [10 * sizeof(Quantity_Color)];
-	for (int i = 0; i < 10; i ++)
-		colorFlags_aux[i] = Quantity_Color (0.0, 1.0, 0.0, Quantity_TOC_RGB);
+//	Quantity_Color * colorFlags_aux = new Quantity_Color [10 * sizeof(Quantity_Color)];
+	//for (int i = 0; i < 10; i ++)
+		//colorFlags_aux[i] = Quantity_Color (0.0, 1.0, 0.0, Quantity_TOC_RGB);
+	Quantity_Color * colorFlags_aux = NULL;
 	TopoDS_ListOfShape listOfShapes;
 //	Flags flags;
 
@@ -527,19 +522,15 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 
 					NTopLevelObjects++;
 
-					//TopLevelObject * tlo = geom->GetTopLevelObject (tlonr);
-					
+					colorFlags_aux = (Quantity_Color*) realloc (colorFlags_aux, NTopLevelObjects * sizeof (Quantity_Color));
+
  					//set the color flags 
 					if (flags.NumListFlagDefined ("col"))
 					{
 						const Array<double> & col = flags.GetNumListFlag ("col");
-						//tlo->SetRGB (col[0], col[1], col[2]);
 						Quantity_Color color = Quantity_Color (col[0], col[1], col[2], Quantity_TOC_RGB);
-						cout << endl <<"setting color...";
-				//		SetColorFlag(color);
-						cout<<endl<<"color set"<<endl;
 ////////////work with aux_ColorFlags
-						colorFlags_aux[NTopLevelObjects - 1] = colorFlags_aux[NTopLevelObjects - 1].Assign(color);
+						colorFlags_aux[NTopLevelObjects - 1] = colorFlags_aux[NTopLevelObjects - 1].Assign (color);
 ////////////////				
 
 						//////test array of colors
@@ -571,9 +562,9 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 							(GetColorFlags()[(NTopLevelObjects - 1) * 2 - 1]) = (GetColorFlags()[NTopLevelObjects]).Assign(color);
 						}	
 				*/
-						cout<<endl<<"set color flags"<<endl;
 					}
-					
+					else
+						colorFlags_aux[NTopLevelObjects - 1] = colorFlags_aux[NTopLevelObjects - 1].Assign (Quantity_Color (0.0, 1.0, 0.0, Quantity_TOC_RGB));
 					/* if (flags.GetDefineFlag ("transparent"))
 							tlo->SetTransparent (1);
 
@@ -619,7 +610,6 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 	if(NTopLevelObjects > 0)
 	{ 
 		sewer.Perform();
-		cout<<endl<<"sewer performed"<<endl;
 		bool first = true;
 		TopoDS_Shape my_fuse;
 		for(TopExp_Explorer exp0 (sewer.SewedShape(), TopAbs_FACE); exp0.More(); exp0.Next())
@@ -631,12 +621,9 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 			}
 			else
 				my_fuse = BRepAlgoAPI_Fuse(my_fuse, exp0.Current());
-			cout<<endl<<"exploring ..."<<endl;
 		}
-		cout<<endl<<"my_fuse performed"<<endl;
 		abuilder.Add(geometry, my_fuse);
-		colorFlags = (Quantity_Color*) malloc (NTopLevelObjects * sizeof (Quantity_Color));
-		cout<<endl<<"allocate mem"<<endl;
+		
 		int ct2 = 0;
 		for(TopExp_Explorer exp0(geometry, TopAbs_FACE); exp0.More(); exp0.Next())
 		{
@@ -655,11 +642,11 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 				if(exp2.More())
 				{
 					has_common = true;
+					colorFlags = (Quantity_Color*) realloc (colorFlags, ct2 * sizeof (Quantity_Color));
 					GetColorFlags()[ct2 - 1] = GetColorFlags()[ct2 - 1].Assign(colorFlags_aux[NTopLevelObjects - no]);
 				}
 			}
 		}
-		cout<<endl<<"counter for geometry compound = "<<ct2<<endl;
 		
 		return geometry;
 	 }
