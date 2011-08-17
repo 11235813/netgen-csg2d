@@ -110,9 +110,6 @@
 #include "StlAPI_Writer.hxx"
 #include "STEPControl_StepModelType.hxx"
 
-//Cristina Precup -12/08/2011
-#include "Quantity_Array1OfColor.hxx"
-
 namespace netgen
 {
 #include "occmeshsurf.hpp"
@@ -198,11 +195,8 @@ namespace netgen
 			
 			//Cristina Precup - 12/08/2011
 			//Quantity_Color to make face colors available to the rest of the system
-//			Quantity_Color faceColors;
-		//	Quantity_Array1OfColor * faceColors;
 			Quantity_Color * faceColors;
-			bool color_valid;
-
+			bool * colorValid;
 
    public:
       TopoDS_Shape shape;
@@ -253,6 +247,7 @@ namespace netgen
          emap.Clear();
          vmap.Clear();
 				 faceColors = NULL;
+				 colorValid = NULL;
       }
 
 
@@ -309,26 +304,22 @@ namespace netgen
       void HealGeometry();
 
 			//Cristina Precup - 12/08/2011
-			//getters, setters for color_valid and faceColors
-			bool GetColorValid()
-			{ return color_valid; }
+			//getters, setters for colorValid and faceColors
+			bool * GetColorValid()
+			{ return colorValid; }
 
-			void SetColorValid (bool valid)
-			{ color_valid =  valid; }
-
-		/*Quantity_Array1OfColor * GetFaceColors()
-			{ return faceColors; }
-
-			void SetFaceColors (Quantity_Array1OfColor * color)
-			{ faceColors = color; }
-*/
+			void SetColorValid (bool * valid)
+			{ 
+				if (colorValid) free(colorValid);
+				colorValid = valid; 
+			}
 
 			Quantity_Color * GetFaceColors()
 			{ return faceColors; }
 
 			void SetFaceColors (Quantity_Color * color)
 			{
-				free (faceColors);
+				if (faceColors) free (faceColors);
 				faceColors = color;
 			}
 		

@@ -7,7 +7,7 @@
 #include <TopExp_Explorer.hxx>
 #include <TopoDS_Face.hxx>
 #include <TopAbs_ShapeEnum.hxx>
-#include <TopoDS.hxx>
+//#include <TopoDS.hxx>
 #include <BRepAlgoAPI_Fuse.hxx>
 #include <BRepAlgoAPI_Common.hxx>
 #include <TopoDS_ListIteratorOfListOfShape.hxx>
@@ -23,21 +23,21 @@
 #include <BRepAlgo_Fuse.hxx>
 #include <BRepAlgo_Common.hxx>
 #include <BRepAlgo_BooleanOperations.hxx>
-#include <BRepBuilderAPI_FindPlane.hxx>
+//#include <BRepBuilderAPI_FindPlane.hxx>
 #include <BRep_Builder.hxx>
 #include <BRepOffsetAPI_Sewing.hxx>
 
-#include <Quantity_Array1OfColor.hxx>
+//#include <Quantity_Array1OfColor.hxx>
 #include <Quantity_Color.hxx>
-#include <Quantity_TypeOfColor.hxx>
-#include <Quantity_NameOfColor.hxx>
-#include <XCAFDoc_ColorTool.hxx>
-#include <XCAFDoc_ColorType.hxx>
-#include <TDF_Label.hxx>
+//#include <Quantity_TypeOfColor.hxx>
+//#include <Quantity_NameOfColor.hxx>
+//#include <XCAFDoc_ColorTool.hxx>
+//#include <XCAFDoc_ColorType.hxx>
+//#include <TDF_Label.hxx>
 
 #include <gp_Vec.hxx>
 #include <gp_Trsf.hxx>
-#include <TopLoc_Location.hxx>
+//#include <TopLoc_Location.hxx>
 
 #include <string>
 #include <map>
@@ -102,9 +102,8 @@ class CSGScanner
 
 		int NTopLevelObjects;
 
-		Quantity_Color colorFlag;
-		//Quantity_Array1OfColor * colorFlags;
 		Quantity_Color * colorFlags;
+		bool * colorValid;
 
   public:
 
@@ -128,18 +127,6 @@ class CSGScanner
 		MyMapType * GetMyMapOfShapes()
 		{ return shapes; }
 
-		Quantity_Color GetColorFlag()
-		{ return colorFlag; }
-
-		void SetColorFlag (Quantity_Color color)
-		{ colorFlag = colorFlag.Assign (color); }
-
-/* 	Quantity_Array1OfColor * GetColorFlags()
-		{ return colorFlags; }
-
-		void SetColorFlags (Quantity_Array1OfColor * array)
-		{ colorFlags = array; }
-*/
 		Quantity_Color * GetColorFlags()
 		{ return colorFlags; }
 
@@ -147,6 +134,16 @@ class CSGScanner
 		{
 			free(colorFlags);
 			colorFlags = array;
+		}
+
+		bool * GetColorValid()
+		{ return colorValid; }
+
+		void SetColorValid (bool * valid)
+		{
+			if (colorValid)
+				free(colorValid);
+			colorValid = valid;
 		}
 
 		void ReadNext();

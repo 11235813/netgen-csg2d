@@ -541,10 +541,9 @@ namespace netgen
             // Forum bug-fox (Jean-Yves - 23/02/2009)
             if((!(occgeometry->face_colours.IsNull())
                && (occgeometry->face_colours->GetColor(face,XCAFDoc_ColorSurf,face_colour))) 
-								|| occgeometry->GetColorValid())
+								|| occgeometry->GetColorValid()[i - 1])
             {
-							 if (ocgeometry->GetColorValid())
-								 //face_colour = face_colour.Assign(occgeometry->GetFaceColors()->Value(i));	
+							 if (ocgeometry->GetColorValid()[i - 1])
 								 face_colour = face_colour.Assign (occgeometry->GetFaceColours()[i - 1]);
 
                mat_col[0] = face_colour.Red();

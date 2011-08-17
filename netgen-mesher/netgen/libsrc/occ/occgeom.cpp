@@ -157,7 +157,7 @@ namespace netgen
 
             if(face_colours.IsNull()
                || (!(face_colours->GetColor(face,XCAFDoc_ColorSurf,face_colour)))
-								|| ( GetColorValid()  == false ))
+								|| ( GetColorValid()[exp0.Depth()]  == false ))
             {
                // Set the default face colour to green (Netgen Standard)
                // if no colour has been defined for the face
@@ -195,11 +195,10 @@ namespace netgen
             // face (after the healing process)
             face = TopoDS::Face (exp0.Current());
             face_colours->SetColor(face,face_colour,XCAFDoc_ColorSurf);
-						//GetFaceColors()->SetValue(exp0.Depth(), face_colour);
+						
 						faceColors = (Quantity_Color*) realloc(faceColors, (exp0.Depth() + 1) * sizeof (Quantity_Color));
 						(GetFaceColors()[exp0.Depth()])  = Quantity_Color();
 						(GetFaceColors()[exp0.Depth()]) = (GetFaceColors()[exp0.Depth()]).Assign(face_colour);
-						cout<<endl<<"value set in occgeom.cpp"<<endl;
          }
          shape = rebuild->Apply(shape);
       }

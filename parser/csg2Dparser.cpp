@@ -40,9 +40,8 @@ CSGScanner :: CSGScanner (istream & ascanin)
 	linenum = 1;
 	shapes = new MyMapType();
 	NTopLevelObjects = 0;
-	// set the default color to green
-	colorFlag = Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB);
 	colorFlags = NULL;
+	colorValid = NULL;
 }
 
 void CSGScanner :: ReadNext ()
@@ -449,7 +448,6 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 {
 	CSGScanner scan(istr);
 	abuilder.MakeCompound(geometry);
-	int NComponents = 0;
 	//retain the color of each TLO. If the color is not set, set it to the default GREEN
 //	Quantity_Color * colorFlags_aux = new Quantity_Color [10 * sizeof(Quantity_Color)];
 	//for (int i = 0; i < 10; i ++)
@@ -624,16 +622,15 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 		}
 		abuilder.Add(geometry, my_fuse);
 		
-		int ct2 = 0;
+		int NComponents = 0;
 		for(TopExp_Explorer exp0(geometry, TopAbs_FACE); exp0.More(); exp0.Next())
 		{
-			ct2++;
+			NComponents++;
 			bool has_common = false;
-			int no = 0;
+			int ntlo = 0;
 			for( TopoDS_ListIteratorOfListOfShape it(listOfShapes); it.More() && (has_common == false); it.Next())
-			
 			{
-				no ++;
+				ntlo ++;
 					
 				TopoDS_Shape common;
 				common = BRepAlgoAPI_Common(exp0.Current(), it.Value());
@@ -642,8 +639,13 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 				if(exp2.More())
 				{
 					has_common = true;
-					colorFlags = (Quantity_Color*) realloc (colorFlags, ct2 * sizeof (Quantity_Color));
-					GetColorFlags()[ct2 - 1] = GetColorFlags()[ct2 - 1].Assign(colorFlags_aux[NTopLevelObjects - no]);
+					colorValid = (bool*) realloc (colorValid, NComponents * sizeof (bool));
+					colorFlags = (Quantity_Color*) realloc (colorFlags, NComponents * sizeof (Quantity_Color));
+					GetColorFlags()[NComponents - 1] = GetColorFlags()[NComponents - 1].Assign(colorFlags_aux[NTopLevelObjects - ntlo]);
+					if (colorFlags_aux[NTopLevelObjects - ntlo].IsDifferent(Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB)))
+						GetColorValid()[NComponents - 1] = true;
+					else
+						GetColorValid()[NComponents - 1] = false;
 				}
 			}
 		}
