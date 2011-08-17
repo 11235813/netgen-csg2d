@@ -196,7 +196,7 @@ namespace netgen
             face = TopoDS::Face (exp0.Current());
             face_colours->SetColor(face,face_colour,XCAFDoc_ColorSurf);
 						//GetFaceColors()->SetValue(exp0.Depth(), face_colour);
-						(GetFaceColors()) = (Quantity_Color*) realloc(GetFaceColors(), exp0.Depth() + 1);
+						faceColors = (Quantity_Color*) realloc(faceColors, (exp0.Depth() + 1) * sizeof (Quantity_Color));
 						(GetFaceColors()[exp0.Depth()])  = Quantity_Color();
 						(GetFaceColors()[exp0.Depth()]) = (GetFaceColors()[exp0.Depth()]).Assign(face_colour);
 						cout<<endl<<"value set in occgeom.cpp"<<endl;
