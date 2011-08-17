@@ -24,18 +24,8 @@ PlaneFigure :: PlaneFigure(optyp aop, PlaneFigure * apf1, PlaneFigure * apf2)
 PlaneFigure :: ~PlaneFigure()
 {
 	delete [] name;
-
-	switch(op)
-	{
-		case SECTION:
-		{
-			if(pf1->op != ROOT) 
-				delete pf1;
-			if(pf2->op != ROOT) 
-				delete pf2;
-			break;
-		}
-	}
+	delete pf1;
+	delete pf2;
 }
 
 void PlaneFigure :: SetName (const char * aname) 
