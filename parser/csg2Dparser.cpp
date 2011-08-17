@@ -40,9 +40,15 @@ CSGScanner :: CSGScanner (istream & ascanin)
 	linenum = 1;
 	shapes = new MyMapType();
 	NTopLevelObjects = 0;
-	colorFlag = Handle_XCAFDoc_ColorTool();
-}
+	// set the default color to green
+	colorFlag = Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB);
+	//colorFlags = new Quantity_Color[10 * sizeof(Quantity_Color)];
+	//colorFlags = (Quantity_Color*) malloc (1 * sizeof (Quantity_Color));
+	colorFlags = NULL;
 
+	//for( int i = 0; i < 10; i ++)
+		//colorFlags[i] = Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB);
+}
 
 void CSGScanner :: ReadNext ()
 {
@@ -309,7 +315,7 @@ PlaneFigure * ParsePrimary (CSGScanner & scan)
 	{
 		scan.ReadNext();
 		PlaneFigure * pf2 = ParsePrimary (scan);
-		TopoDS_Shape temp = pf2->GetPrimitive();;
+		TopoDS_Shape temp = pf2->GetPrimitive();
 		pf2 = new PlaneFigure(pf2->GetPrimitive(), true);
 		return pf2;
 	}
@@ -449,6 +455,13 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 {
 	CSGScanner scan(istr);
 	abuilder.MakeCompound(geometry);
+	int NComponents = 0;
+	//retain the color of each TLO. If the color is not set, set it to the default GREEN
+	Quantity_Color * colorFlags_aux = new Quantity_Color [10 * sizeof(Quantity_Color)];
+	for (int i = 0; i < 10; i ++)
+		colorFlags_aux[i] = Quantity_Color (0.0, 1.0, 0.0, Quantity_TOC_RGB);
+	TopoDS_ListOfShape listOfShapes;
+//	Flags flags;
 
 	scan.ReadNext();
 	//check for the 'algebraic2d' keyword
@@ -509,23 +522,58 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 
 					//add the object to the compound shape with all the top level objects
 					sewer.Add(scan.GetMyMapOfShapes()->find(name)->second);
+
+					listOfShapes.Prepend(scan.GetMyMapOfShapes()->find(name)->second);
+
 					NTopLevelObjects++;
 
 					//TopLevelObject * tlo = geom->GetTopLevelObject (tlonr);
-					/*
- 					*set the color flags 
+					
+ 					//set the color flags 
 					if (flags.NumListFlagDefined ("col"))
 					{
 						const Array<double> & col = flags.GetNumListFlag ("col");
 						//tlo->SetRGB (col[0], col[1], col[2]);
-						Quantity_Color colors = Quantity_Color (col[0], col[1], col[2], Quantity_TOC_RGB);
-						XCAFDoc_ColorType colortype = XCAFDoc_ColorGen;
-						TopoDS_Shape shape = scan.GetMyMapOfShapes()->rbegin()->second;
-						cout<<endl<<"set shape"<<endl;
-						cout<<endl<<"returns: "<<colorFlag->SetColor(shape, colors, colortype)<<endl;  
-						cout<<endl<<"set color"<<endl;
-					}
+						Quantity_Color color = Quantity_Color (col[0], col[1], col[2], Quantity_TOC_RGB);
+						cout << endl <<"setting color...";
+				//		SetColorFlag(color);
+						cout<<endl<<"color set"<<endl;
+////////////work with aux_ColorFlags
+						colorFlags_aux[NTopLevelObjects - 1] = colorFlags_aux[NTopLevelObjects - 1].Assign(color);
+////////////////				
+
+						//////test array of colors
+						//GetColorFlags()->SetValue (NTopLevelObjects, color);
+					//	(GetColorFlags()[NTopLevelObjects - 1]) = Quantity_Color();
+						//(GetColorFlags()[NTopLevelObjects - 1]) = (GetColorFlags()[NTopLevelObjects - 1]).Assign(color);
+					/* 	
+						(GetColorFlags()[NComponents]) = Quantity_Color();
+						(GetColorFlags()[NComponents]) = (GetColorFlags()[NComponents]).Assign(color);
+						NComponents ++;
+						sewer.Perform();
+						if(NComponents != 1)
+						{
+							TopoDS_Shape temp = BRepAlgo_Cut(scan.GetMyMapOfShapes()->find(name)->second, sewer.SewedShape());
+							if (!temp.IsNull())
+							{
+								(GetColorFlags()[NComponents]) = Quantity_Color();
+								(GetColorFlags()[NComponents]) = (GetColorFlags()[NComponents]).Assign(color);
+								NComponents ++;
+							}
+						}
 					*/
+
+						//set the fusion to be the same color as the current tlo
+				/*		if ((NTopLevelObjects - 1 ) * 2 > 0)
+						{
+							cout<<endl<<"set prev"<<endl;
+							(GetColorFlags()[(NTopLevelObjects - 1) * 2 - 1]) = Quantity_Color();
+							(GetColorFlags()[(NTopLevelObjects - 1) * 2 - 1]) = (GetColorFlags()[NTopLevelObjects]).Assign(color);
+						}	
+				*/
+						cout<<endl<<"set color flags"<<endl;
+					}
+					
 					/* if (flags.GetDefineFlag ("transparent"))
 							tlo->SetTransparent (1);
 
@@ -566,23 +614,52 @@ TopoDS_Shape CSGScanner :: ParseCSG (istream & istr)
 		if (tlo->GetSolid())
 		(*testout) << i << ": " << *tlo->GetSolid() << endl;
 	}
-	*/  
-	 
+	*/
+
 	if(NTopLevelObjects > 0)
 	{ 
 		sewer.Perform();
-
-		int ct = 0;
+		cout<<endl<<"sewer performed"<<endl;
+		bool first = true;
 		TopoDS_Shape my_fuse;
-		for(TopExp_Explorer exp0(sewer.SewedShape(), TopAbs_FACE); exp0.More(); exp0.Next())
+		for(TopExp_Explorer exp0 (sewer.SewedShape(), TopAbs_FACE); exp0.More(); exp0.Next())
 		{
-			ct++;
-			if (ct == 1)
+			if (first)
+			{
 				my_fuse = exp0.Current();
+				first = false;
+			}
 			else
 				my_fuse = BRepAlgoAPI_Fuse(my_fuse, exp0.Current());
+			cout<<endl<<"exploring ..."<<endl;
 		}
+		cout<<endl<<"my_fuse performed"<<endl;
 		abuilder.Add(geometry, my_fuse);
+		colorFlags = (Quantity_Color*) malloc (NTopLevelObjects * sizeof (Quantity_Color));
+		cout<<endl<<"allocate mem"<<endl;
+		int ct2 = 0;
+		for(TopExp_Explorer exp0(geometry, TopAbs_FACE); exp0.More(); exp0.Next())
+		{
+			ct2++;
+			bool has_common = false;
+			int no = 0;
+			for( TopoDS_ListIteratorOfListOfShape it(listOfShapes); it.More() && (has_common == false); it.Next())
+			
+			{
+				no ++;
+					
+				TopoDS_Shape common;
+				common = BRepAlgoAPI_Common(exp0.Current(), it.Value());
+				TopExp_Explorer exp2(common, TopAbs_FACE, TopAbs_EDGE);
+					
+				if(exp2.More())
+				{
+					has_common = true;
+					GetColorFlags()[ct2 - 1] = GetColorFlags()[ct2 - 1].Assign(colorFlags_aux[NTopLevelObjects - no]);
+				}
+			}
+		}
+		cout<<endl<<"counter for geometry compound = "<<ct2<<endl;
 		
 		return geometry;
 	 }

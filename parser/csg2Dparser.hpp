@@ -9,6 +9,9 @@
 #include <TopAbs_ShapeEnum.hxx>
 #include <TopoDS.hxx>
 #include <BRepAlgoAPI_Fuse.hxx>
+#include <BRepAlgoAPI_Common.hxx>
+#include <TopoDS_ListIteratorOfListOfShape.hxx>
+#include <TopoDS_ListOfShape.hxx>
 
 #include <TopoDS_Shape.hxx>
 #include <TopoDS_Wire.hxx>
@@ -24,8 +27,7 @@
 #include <BRep_Builder.hxx>
 #include <BRepOffsetAPI_Sewing.hxx>
 
-#include <Handle_XCAFDoc_DocumentTool.hxx>
-#include <Handle_XCAFDoc_ColorTool.hxx>
+#include <Quantity_Array1OfColor.hxx>
 #include <Quantity_Color.hxx>
 #include <Quantity_TypeOfColor.hxx>
 #include <Quantity_NameOfColor.hxx>
@@ -40,6 +42,7 @@
 #include <string>
 #include <map>
 #include <utility>
+#include <math.h>
 
 #include <myadt.hpp>
 using namespace netgen;
@@ -99,7 +102,9 @@ class CSGScanner
 
 		int NTopLevelObjects;
 
-		Handle_XCAFDoc_ColorTool colorFlag;
+		Quantity_Color colorFlag;
+		//Quantity_Array1OfColor * colorFlags;
+		Quantity_Color * colorFlags;
 
   public:
 
@@ -123,8 +128,26 @@ class CSGScanner
 		MyMapType * GetMyMapOfShapes()
 		{ return shapes; }
 
-		Handle_XCAFDoc_ColorTool GetColorTool()
-		{ return colorFlag; }   
+		Quantity_Color GetColorFlag()
+		{ return colorFlag; }
+
+		void SetColorFlag (Quantity_Color color)
+		{ colorFlag = colorFlag.Assign (color); }
+
+/* 	Quantity_Array1OfColor * GetColorFlags()
+		{ return colorFlags; }
+
+		void SetColorFlags (Quantity_Array1OfColor * array)
+		{ colorFlags = array; }
+*/
+		Quantity_Color * GetColorFlags()
+		{ return colorFlags; }
+
+		void SetColorFlags (Quantity_Color * array)
+		{
+			free(colorFlags);
+			colorFlags = array;
+		}
 
 		void ReadNext();
 

@@ -44,13 +44,24 @@ NetgenGeometry *  CSG2dRegister :: Load (string filename) const
 		/////////////////
 		OCCGeometry * occgeo;
 		occgeo = new OCCGeometry;
-
 		occgeo->shape = geom;
-
-		occgeo->face_colours = Handle_XCAFDoc_ColorTool();
+	/* Quantity_Color color = s->GetColorFlag();
+		if (color.IsDifferent(Quantity_Color(0.0, 1.0, 0.0, Quantity_TOC_RGB)))
+		{
+			occgeo->SetColorValid(true);
+			occgeo->SetFaceColors(color);
+		}
+		else
+			occgeo->SetColorValid(false);
+		occgeo->face_colours = new XCAFDoc_ColorTool();
 		occgeo->face_colours.Nullify();
-		
-		//occgeo->face_colours = s->GetColorTool();
+		*/
+
+////////////////test colorFlags
+		occgeo->SetColorValid(true);
+		occgeo->SetFaceColors(s->GetColorFlags());
+		cout<<endl<<"set face colors in occgeo"<<endl;
+
 		occgeo->changed = 1;
 		occgeo->BuildFMap();
 
