@@ -1,0 +1,17 @@
+# CSG2d color flags
+
+algebraic2d
+
+# define reference circle:
+planefigure circ1 = circle (30, 50; 2);
+planefigure circ2 = circle(34, 50; 2);
+
+planefigure rec1 = polygon(4; 26, 50; 26, 51; 28, 51; 28, 50);
+planefigure rec2 = polygon(4; 24, 50; 24, 51; 26, 51; 26, 50);
+planefigure triangle = polygon(3; 22, 51; 24, 52; 24, 51);
+
+tlo circ1 -col=[0,0,1];
+tlo rec1 -col=[0,1,1];
+tlo triangle;
+tlo circ2 -col=[1,0,0];
+tlo rec2 -col=[1,1,0];
