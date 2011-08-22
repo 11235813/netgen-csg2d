@@ -1,55 +1,47 @@
+#ifndef _CSG2DPARSER_HPP
+#define _CSG2DPARSER_HPP
+
+/******************************************************************************/
+/* File:    csg2Dparser.hpp                                                   */
+/* Author:  Cristina Precup, cpcristinaprecup@gmail.com                       */
+/* Date:    20/06/2011                                                        */
+/******************************************************************************/
+
 #include "planefigure.hpp"
 #include "planefigure.cpp"
 #include "polygon.cpp"
 #include "circle.cpp"
 #include "ellipse.cpp"
 
-#include <TopExp_Explorer.hxx>
-#include <TopoDS_Face.hxx>
-#include <TopAbs_ShapeEnum.hxx>
-//#include <TopoDS.hxx>
 #include <BRepAlgoAPI_Fuse.hxx>
 #include <BRepAlgoAPI_Common.hxx>
-#include <TopoDS_ListIteratorOfListOfShape.hxx>
-#include <TopoDS_ListOfShape.hxx>
-
-#include <TopoDS_Shape.hxx>
-#include <TopoDS_Wire.hxx>
-#include <TopoDS_Compound.hxx>
-
-#include <TColgp_Array1OfPnt.hxx>
-
 #include <BRepAlgo_Cut.hxx>
 #include <BRepAlgo_Fuse.hxx>
 #include <BRepAlgo_Common.hxx>
 #include <BRepAlgo_BooleanOperations.hxx>
-//#include <BRepBuilderAPI_FindPlane.hxx>
 #include <BRep_Builder.hxx>
 #include <BRepOffsetAPI_Sewing.hxx>
-
-//#include <Quantity_Array1OfColor.hxx>
-#include <Quantity_Color.hxx>
-//#include <Quantity_TypeOfColor.hxx>
-//#include <Quantity_NameOfColor.hxx>
-//#include <XCAFDoc_ColorTool.hxx>
-//#include <XCAFDoc_ColorType.hxx>
-//#include <TDF_Label.hxx>
-
 #include <gp_Vec.hxx>
 #include <gp_Trsf.hxx>
-//#include <TopLoc_Location.hxx>
+#include <Quantity_Color.hxx>
+#include <TopExp_Explorer.hxx>
+#include <TopoDS_Face.hxx>
+#include <TopAbs_ShapeEnum.hxx>
+#include <TopoDS_ListIteratorOfListOfShape.hxx>
+#include <TopoDS_ListOfShape.hxx>
+#include <TopoDS_Shape.hxx>
+#include <TopoDS_Wire.hxx>
+#include <TopoDS_Compound.hxx>
+#include <TColgp_Array1OfPnt.hxx>
 
+#include <vector>
 #include <string>
 #include <map>
 #include <utility>
-#include <math.h>
 
 #include <myadt.hpp>
 using namespace netgen;
 using namespace std;
-
-#ifndef _CSG2DPARSER_HPP
-#define _CSG2DPARSER_HPP
 
 enum TOKEN_TYPE
 	{
@@ -57,14 +49,10 @@ enum TOKEN_TYPE
 		TOK_EQU = '=', TOK_COMMA = ',', TOK_SEMICOLON = ';',
 		TOK_NUM = 100, TOK_STRING, TOK_PRIMITIVE,
 		TOK_OR, TOK_AND, TOK_NOT,
-		/*   TOK_SINGULAR, TOK_EDGE, TOK_POINT, TOK_IDENTIFY,
-		*/
 		TOK_PLANEFIGURE,
-		TOK_RECO2, TOK_TLO,/* TOK_BOUNDINGBOX,
-		TOK_BOUNDARYCONDITION, TOK_BOUNDARYCONDITIONNAME,
-		TOK_CONSTANT,
-		*/
-		TOK_END };
+		TOK_RECO2, TOK_TLO,
+		TOK_END 
+	};
 
 struct kwstruct
 	{
@@ -149,13 +137,6 @@ class CSGScanner
 		void ReadNext();
 
 		TopoDS_Shape ParseCSG(istream & istr);
-		/*
-		CSGScanner & Parse (char ch);
-		CSGScanner & Parse (int & i);
-		CSGScanner & Parse (double & d);
-		CSGScanner & Parse (Point<3> & p);
-		CSGScanner & Parse (Vec<3> & p);
-		*/
 		void Error (const string & err);
 	};
 
@@ -163,7 +144,6 @@ class CSGScanner
 	CSGScanner & operator>> (CSGScanner & scan, char ch);
 	CSGScanner & operator>> (CSGScanner & scan, double & d);
 	CSGScanner & operator>> (CSGScanner & scan, int & i);
-	//CSGScanner & operator>> (CSGScanner & scan, Point<3> & p);
 
 #endif
 

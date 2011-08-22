@@ -2,9 +2,9 @@
 #define FILE_CSG2D
 
 /******************************************************************************/
-/*       File:    csg2d.hpp                                                   */
-/*       Author:  Cristina Precup, cpcristinaprecup@gmail.com                 */
-/*       Created: 08/07/2011                                                  */
+/* File:    csg2d.hpp                                                         */
+/* Author:  Cristina Precup, cpcristinaprecup@gmail.com                       */
+/* Date:    08/07/2011                                                        */
 /******************************************************************************/
 
 #include <BRepBuilderAPI_MakeEdge.hxx>

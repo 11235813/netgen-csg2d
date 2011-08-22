@@ -35,7 +35,7 @@ menu .ngmenu.file
 	    {"STEP Geometry"    {.step .stp} }
 	    {"Geometry file"       {.geo} }
 	    {"2D Geometry"   {.in2d } }
-            {"Geometry 2d file" {.geo2d} } 
+			{"Geometry 2d file" {.geo2d} } 
 	} 
 
 	set ACISavailable [Ng_ACISCommand isACISavailable]

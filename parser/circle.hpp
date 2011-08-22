@@ -2,9 +2,9 @@
 #define FILE_CIRCLE
 
 /******************************************************************************/
-/*       File:    circle.hpp                                                  */
-/*       Author:  Cristina Precup, cpcristinaprecup@gmail.com                 */
-/*       Created: 08/07/2011                                                  */
+/* File:    circle.hpp                                                        */
+/* Author:  Cristina Precup, cpcristinaprecup@gmail.com                       */
+/* Date:    08/07/2011                                                        */
 /******************************************************************************/
 
 /* 

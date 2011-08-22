@@ -2,9 +2,9 @@
 #define FILE_ELLIPSE
 
 /******************************************************************************/
-/*       File:    ellipse.hpp                                                 */
-/*       Author:  Cristina Precup, cpcristinaprecup@gmail.com                 */
-/*       Created: 08/07/2011                                                  */
+/* File:    ellipse.hpp                                                       */
+/* Author:  Cristina Precup, cpcristinaprecup@gmail.com                       */
+/* Date:    08/07/2011                                                        */
 /******************************************************************************/
 
 /* 
