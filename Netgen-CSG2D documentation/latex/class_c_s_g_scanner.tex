@@ -1,0 +1,350 @@
+\hypertarget{class_c_s_g_scanner}{
+\section{CSGScanner Class Reference}
+\label{class_c_s_g_scanner}\index{CSGScanner@{CSGScanner}}
+}
+
+
+Scanner for the csg2d input file.  
+
+
+
+
+{\ttfamily \#include $<$csg2Dparser.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_s_g_scanner_a81a3ad42eb3274583fcc87f31b343ce8}{CSGScanner} (istream \&ascanin)
+\begin{DoxyCompactList}\small\item\em A constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{csg2_dparser_8hpp_abbf72a04a030b0407c2a0d547f84e12d}{TOKEN\_\-TYPE} \hyperlink{class_c_s_g_scanner_ac0039567197944ff073e82bb11efe900}{GetToken} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the token type. \item\end{DoxyCompactList}\item 
+double \hyperlink{class_c_s_g_scanner_aeef8b65af04e9b57d662fa4c430d3f8a}{GetNumValue} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the number\_\-value. \item\end{DoxyCompactList}\item 
+const string \& \hyperlink{class_c_s_g_scanner_afcbcdd18954112e8c0440d8320688208}{GetStringValue} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the string\_\-value. \item\end{DoxyCompactList}\item 
+char \hyperlink{class_c_s_g_scanner_afbae7d06ab56034c88ccce81ef9462a3}{GetCharValue} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the first character from the string\_\-value. \item\end{DoxyCompactList}\item 
+\hyperlink{csg2_dparser_8hpp_ab40fb89cc758bdfbf49d368eb0110f47}{PRIMITIVE\_\-TYPE} \hyperlink{class_c_s_g_scanner_a08d690f71658d2262ae5bc8587153c1e}{GetPrimitiveToken} () const 
+\begin{DoxyCompactList}\small\item\em Getter for the prim\_\-token. \item\end{DoxyCompactList}\item 
+\hyperlink{csg2_dparser_8hpp_a251f6b5350190316faa1b5a8034cee33}{MyMapType} $\ast$ \hyperlink{class_c_s_g_scanner_abfd09d47edaa7c2eb708acfbe5e0b4da}{GetMyMapOfShapes} ()
+\begin{DoxyCompactList}\small\item\em Getter for all the shapes defined. \item\end{DoxyCompactList}\item 
+Quantity\_\-Color $\ast$ \hyperlink{class_c_s_g_scanner_a18a40df7abd244eba784765683881a0f}{GetColorFlags} ()
+\begin{DoxyCompactList}\small\item\em Getter for the colors of the top-\/level objects. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_c_s_g_scanner_a9ccdf1031d602b442f0085e2139e58e7}{SetColorFlags} (Quantity\_\-Color $\ast$array)
+\begin{DoxyCompactList}\small\item\em Setter for the colors of the top-\/level objects. \item\end{DoxyCompactList}\item 
+bool $\ast$ \hyperlink{class_c_s_g_scanner_a0e4809b5ce11a52e470d2b436badaae6}{GetColorValid} ()
+\begin{DoxyCompactList}\small\item\em Getter for the validity flags of the colors. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_c_s_g_scanner_a023fe9a7c16ef1edbd16598a52a7a0ce}{SetColorValid} (bool $\ast$valid)
+\begin{DoxyCompactList}\small\item\em Setter for the validity flags of the colors. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_c_s_g_scanner_a5535f8ab8f8cd54b86d09de403384248}{ReadNext} ()
+\begin{DoxyCompactList}\small\item\em Read the next scannable element from the input file. \item\end{DoxyCompactList}\item 
+TopoDS\_\-Shape \hyperlink{class_c_s_g_scanner_a45c4c5a94dec423db4df221de6464954}{ParseCSG} (istream \&istr)
+\begin{DoxyCompactList}\small\item\em The csg2d file parser. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_c_s_g_scanner_a7a6bd1663537921f44d76fa6f041eeed}{Error} (const string \&err)
+\begin{DoxyCompactList}\small\item\em Prints an error with the message err. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Scanner for the csg2d input file. 
+
+Definition at line 99 of file csg2Dparser.hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_s_g_scanner_a81a3ad42eb3274583fcc87f31b343ce8}{
+\index{CSGScanner@{CSGScanner}!CSGScanner@{CSGScanner}}
+\index{CSGScanner@{CSGScanner}!CSGScanner@{CSGScanner}}
+\subsubsection[{CSGScanner}]{\setlength{\rightskip}{0pt plus 5cm}CSGScanner::CSGScanner (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{ascanin}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_s_g_scanner_a81a3ad42eb3274583fcc87f31b343ce8}
+
+
+A constructor. 
+
+Initializes the class members. 
+\begin{DoxyParams}{Parameters}
+{\em ascanin} & A istream \& argument. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file csg2Dparser.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_s_g_scanner_a7a6bd1663537921f44d76fa6f041eeed}{
+\index{CSGScanner@{CSGScanner}!Error@{Error}}
+\index{Error@{Error}!CSGScanner@{CSGScanner}}
+\subsubsection[{Error}]{\setlength{\rightskip}{0pt plus 5cm}void CSGScanner::Error (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{err}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_s_g_scanner_a7a6bd1663537921f44d76fa6f041eeed}
+
+
+Prints an error with the message err. 
+
+It makes use of the linenum variable in order to specify the line number in which the error has been occurred. 
+\begin{DoxyParams}{Parameters}
+{\em err} & A string \& argument. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file csg2Dparser.cpp.
+
+\hypertarget{class_c_s_g_scanner_afbae7d06ab56034c88ccce81ef9462a3}{
+\index{CSGScanner@{CSGScanner}!GetCharValue@{GetCharValue}}
+\index{GetCharValue@{GetCharValue}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetCharValue}]{\setlength{\rightskip}{0pt plus 5cm}char CSGScanner::GetCharValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_afbae7d06ab56034c88ccce81ef9462a3}
+
+
+Getter for the first character from the string\_\-value. 
+
+\begin{DoxyReturn}{Returns}
+this character. 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_a18a40df7abd244eba784765683881a0f}{
+\index{CSGScanner@{CSGScanner}!GetColorFlags@{GetColorFlags}}
+\index{GetColorFlags@{GetColorFlags}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetColorFlags}]{\setlength{\rightskip}{0pt plus 5cm}Quantity\_\-Color$\ast$ CSGScanner::GetColorFlags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_a18a40df7abd244eba784765683881a0f}
+
+
+Getter for the colors of the top-\/level objects. 
+
+\begin{DoxyReturn}{Returns}
+these colors. 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_a0e4809b5ce11a52e470d2b436badaae6}{
+\index{CSGScanner@{CSGScanner}!GetColorValid@{GetColorValid}}
+\index{GetColorValid@{GetColorValid}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetColorValid}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ CSGScanner::GetColorValid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_a0e4809b5ce11a52e470d2b436badaae6}
+
+
+Getter for the validity flags of the colors. 
+
+\begin{DoxyReturn}{Returns}
+these boolean flags. 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_abfd09d47edaa7c2eb708acfbe5e0b4da}{
+\index{CSGScanner@{CSGScanner}!GetMyMapOfShapes@{GetMyMapOfShapes}}
+\index{GetMyMapOfShapes@{GetMyMapOfShapes}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetMyMapOfShapes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf MyMapType}$\ast$ CSGScanner::GetMyMapOfShapes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_abfd09d47edaa7c2eb708acfbe5e0b4da}
+
+
+Getter for all the shapes defined. 
+
+\begin{DoxyReturn}{Returns}
+these shapes. 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_aeef8b65af04e9b57d662fa4c430d3f8a}{
+\index{CSGScanner@{CSGScanner}!GetNumValue@{GetNumValue}}
+\index{GetNumValue@{GetNumValue}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetNumValue}]{\setlength{\rightskip}{0pt plus 5cm}double CSGScanner::GetNumValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_aeef8b65af04e9b57d662fa4c430d3f8a}
+
+
+Getter for the number\_\-value. 
+
+\begin{DoxyReturn}{Returns}
+this number value. 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_a08d690f71658d2262ae5bc8587153c1e}{
+\index{CSGScanner@{CSGScanner}!GetPrimitiveToken@{GetPrimitiveToken}}
+\index{GetPrimitiveToken@{GetPrimitiveToken}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetPrimitiveToken}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PRIMITIVE\_\-TYPE} CSGScanner::GetPrimitiveToken (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_a08d690f71658d2262ae5bc8587153c1e}
+
+
+Getter for the prim\_\-token. 
+
+\begin{DoxyReturn}{Returns}
+this primitive token. 
+\end{DoxyReturn}
+
+
+Definition at line 157 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_afcbcdd18954112e8c0440d8320688208}{
+\index{CSGScanner@{CSGScanner}!GetStringValue@{GetStringValue}}
+\index{GetStringValue@{GetStringValue}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetStringValue}]{\setlength{\rightskip}{0pt plus 5cm}const string\& CSGScanner::GetStringValue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_afcbcdd18954112e8c0440d8320688208}
+
+
+Getter for the string\_\-value. 
+
+\begin{DoxyReturn}{Returns}
+this string value. 
+\end{DoxyReturn}
+
+
+Definition at line 143 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_ac0039567197944ff073e82bb11efe900}{
+\index{CSGScanner@{CSGScanner}!GetToken@{GetToken}}
+\index{GetToken@{GetToken}!CSGScanner@{CSGScanner}}
+\subsubsection[{GetToken}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TOKEN\_\-TYPE} CSGScanner::GetToken (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_ac0039567197944ff073e82bb11efe900}
+
+
+Getter for the token type. 
+
+\begin{DoxyReturn}{Returns}
+the token. 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_a45c4c5a94dec423db4df221de6464954}{
+\index{CSGScanner@{CSGScanner}!ParseCSG@{ParseCSG}}
+\index{ParseCSG@{ParseCSG}!CSGScanner@{CSGScanner}}
+\subsubsection[{ParseCSG}]{\setlength{\rightskip}{0pt plus 5cm}TopoDS\_\-Shape CSGScanner::ParseCSG (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{istr}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_s_g_scanner_a45c4c5a94dec423db4df221de6464954}
+
+
+The csg2d file parser. 
+
+This is the main function which scans the whole file and acts according the information read. 
+\begin{DoxyParams}{Parameters}
+{\em istr} & A istream \& argument. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 451 of file csg2Dparser.cpp.
+
+\hypertarget{class_c_s_g_scanner_a5535f8ab8f8cd54b86d09de403384248}{
+\index{CSGScanner@{CSGScanner}!ReadNext@{ReadNext}}
+\index{ReadNext@{ReadNext}!CSGScanner@{CSGScanner}}
+\subsubsection[{ReadNext}]{\setlength{\rightskip}{0pt plus 5cm}void CSGScanner::ReadNext (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_c_s_g_scanner_a5535f8ab8f8cd54b86d09de403384248}
+
+
+Read the next scannable element from the input file. 
+
+
+
+Definition at line 51 of file csg2Dparser.cpp.
+
+\hypertarget{class_c_s_g_scanner_a9ccdf1031d602b442f0085e2139e58e7}{
+\index{CSGScanner@{CSGScanner}!SetColorFlags@{SetColorFlags}}
+\index{SetColorFlags@{SetColorFlags}!CSGScanner@{CSGScanner}}
+\subsubsection[{SetColorFlags}]{\setlength{\rightskip}{0pt plus 5cm}void CSGScanner::SetColorFlags (
+\begin{DoxyParamCaption}
+\item[{Quantity\_\-Color $\ast$}]{array}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_a9ccdf1031d602b442f0085e2139e58e7}
+
+
+Setter for the colors of the top-\/level objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Quantity\_\-Color $\ast$ argument. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 178 of file csg2Dparser.hpp.
+
+\hypertarget{class_c_s_g_scanner_a023fe9a7c16ef1edbd16598a52a7a0ce}{
+\index{CSGScanner@{CSGScanner}!SetColorValid@{SetColorValid}}
+\index{SetColorValid@{SetColorValid}!CSGScanner@{CSGScanner}}
+\subsubsection[{SetColorValid}]{\setlength{\rightskip}{0pt plus 5cm}void CSGScanner::SetColorValid (
+\begin{DoxyParamCaption}
+\item[{bool $\ast$}]{valid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_c_s_g_scanner_a023fe9a7c16ef1edbd16598a52a7a0ce}
+
+
+Setter for the validity flags of the colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valid} & A bool $\ast$ argument. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 195 of file csg2Dparser.hpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{csg2_dparser_8hpp}{csg2Dparser.hpp}\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{csg2_dparser_8cpp}{csg2Dparser.cpp}\end{DoxyCompactItemize}

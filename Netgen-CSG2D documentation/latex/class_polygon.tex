@@ -1,0 +1,132 @@
+\hypertarget{class_polygon}{
+\section{Polygon Class Reference}
+\label{class_polygon}\index{Polygon@{Polygon}}
+}
+
+
+Class for the polygon primitive.  
+
+
+
+
+{\ttfamily \#include $<$polygon.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_polygon_a4208e6c38149dea0bbc682f6ef48b633}{Polygon} (TColgp\_\-Array1OfPnt $\ast$aarrayOfPoints)
+\begin{DoxyCompactList}\small\item\em A constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_polygon_ace39c67107966db12e13a183f496c3b0}{$\sim$Polygon} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \item\end{DoxyCompactList}\item 
+TopoDS\_\-Shape \hyperlink{class_polygon_a0895f63cb18b1542d4f35937cea04134}{MakePolygon} ()
+\begin{DoxyCompactList}\small\item\em Creates a closed polygon represented as a bounded surface in the 3D space. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+TColgp\_\-Array1OfPnt $\ast$ \hyperlink{class_polygon_a2a907e1325d587bb068b3a20f005d917}{arrayOfPoints}
+\begin{DoxyCompactList}\small\item\em Points that determine the vertices. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the polygon primitive. This class implements an algorithm which is used to create a polygon. 
+
+Definition at line 20 of file polygon.hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_polygon_a4208e6c38149dea0bbc682f6ef48b633}{
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!Polygon@{Polygon}}
+\subsubsection[{Polygon}]{\setlength{\rightskip}{0pt plus 5cm}Polygon::Polygon (
+\begin{DoxyParamCaption}
+\item[{TColgp\_\-Array1OfPnt $\ast$}]{aarrayOfPoints}
+\end{DoxyParamCaption}
+)}}
+\label{class_polygon_a4208e6c38149dea0bbc682f6ef48b633}
+
+
+A constructor. 
+
+Assigns the array of points. 
+\begin{DoxyParams}{Parameters}
+{\em aarrayOfPoints} & A TColgp\_\-Array1OfPnt $\ast$ argument. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_polygon_ace39c67107966db12e13a183f496c3b0}{$\sim$Polygon()} 
+
+\hyperlink{class_polygon_a0895f63cb18b1542d4f35937cea04134}{MakePolygon()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 14 of file polygon.cpp.
+
+\hypertarget{class_polygon_ace39c67107966db12e13a183f496c3b0}{
+\index{Polygon@{Polygon}!$\sim$Polygon@{$\sim$Polygon}}
+\index{$\sim$Polygon@{$\sim$Polygon}!Polygon@{Polygon}}
+\subsubsection[{$\sim$Polygon}]{\setlength{\rightskip}{0pt plus 5cm}Polygon::$\sim$Polygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_polygon_ace39c67107966db12e13a183f496c3b0}
+
+
+A destructor. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_polygon_a4208e6c38149dea0bbc682f6ef48b633}{Polygon()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 19 of file polygon.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_polygon_a0895f63cb18b1542d4f35937cea04134}{
+\index{Polygon@{Polygon}!MakePolygon@{MakePolygon}}
+\index{MakePolygon@{MakePolygon}!Polygon@{Polygon}}
+\subsubsection[{MakePolygon}]{\setlength{\rightskip}{0pt plus 5cm}TopoDS\_\-Shape Polygon::MakePolygon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_polygon_a0895f63cb18b1542d4f35937cea04134}
+
+
+Creates a closed polygon represented as a bounded surface in the 3D space. 
+
+It constructs a polygon by adding all the points in arrayOfPoints, adds it to the wire and eventually, creates a face resulted from taking the closed area determined by the wire on a bounded surface. It returns the face resulted. \begin{DoxyReturn}{Returns}
+The face for the polygon. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_polygon_a4208e6c38149dea0bbc682f6ef48b633}{Polygon()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 25 of file polygon.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_polygon_a2a907e1325d587bb068b3a20f005d917}{
+\index{Polygon@{Polygon}!arrayOfPoints@{arrayOfPoints}}
+\index{arrayOfPoints@{arrayOfPoints}!Polygon@{Polygon}}
+\subsubsection[{arrayOfPoints}]{\setlength{\rightskip}{0pt plus 5cm}TColgp\_\-Array1OfPnt$\ast$ {\bf Polygon::arrayOfPoints}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_polygon_a2a907e1325d587bb068b3a20f005d917}
+
+
+Points that determine the vertices. 
+
+
+
+Definition at line 23 of file polygon.hpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{polygon_8hpp}{polygon.hpp}\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{polygon_8cpp}{polygon.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,240 @@
+\hypertarget{csg2_dparser_8cpp}{
+\section{/home/cristina/work/netgen-\/csg2d/parser/csg2Dparser.cpp File Reference}
+\label{csg2_dparser_8cpp}\index{/home/cristina/work/netgen-\/csg2d/parser/csg2Dparser.cpp@{/home/cristina/work/netgen-\/csg2d/parser/csg2Dparser.cpp}}
+}
+
+
+The parser for the csg2d input files.  
+
+
+{\ttfamily \#include \char`\"{}csg2Dparser.hpp\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{csg2_dparser_8cpp_a712333e7f2316853641e50de5a0e474f}{ParseChar} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan, char ch)
+\item 
+double \hyperlink{csg2_dparser_8cpp_a3abaaf1cc71618a73aa2488ecdfc8524}{ParseNumber} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan)
+\item 
+gp\_\-Vec \hyperlink{csg2_dparser_8cpp_a2e5120e5bc7b61cfb591ecb43cb491ac}{ParseVector} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan)
+\item 
+\hyperlink{class_c_s_g_scanner}{CSGScanner} \& \hyperlink{csg2_dparser_8cpp_a86d6028e0a54088f7c208c1ff05bbec0}{operator$>$$>$} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan, char ch)
+\begin{DoxyCompactList}\small\item\em Overloaded $>$$>$ operator. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_s_g_scanner}{CSGScanner} \& \hyperlink{csg2_dparser_8cpp_a8f82b9dd7c7a50ad3ae2745a76106d37}{operator$>$$>$} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan, double \&d)
+\begin{DoxyCompactList}\small\item\em Overloaded $>$$>$ operator. \item\end{DoxyCompactList}\item 
+\hyperlink{class_c_s_g_scanner}{CSGScanner} \& \hyperlink{csg2_dparser_8cpp_afbee96c26192a7ddd8d24f6b8fdd1ec0}{operator$>$$>$} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan, int \&i)
+\begin{DoxyCompactList}\small\item\em Overloaded $>$$>$ operator. \item\end{DoxyCompactList}\item 
+\hyperlink{class_plane_figure}{PlaneFigure} $\ast$ \hyperlink{csg2_dparser_8cpp_addcd3929d0b5eccb7721796088c895de}{ParsePlaneFigure} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan)
+\item 
+\hyperlink{class_plane_figure}{PlaneFigure} $\ast$ \hyperlink{csg2_dparser_8cpp_af054c17de229ed96a8daf78b8901603e}{ParseTerm} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan)
+\item 
+\hyperlink{class_plane_figure}{PlaneFigure} $\ast$ \hyperlink{csg2_dparser_8cpp_a8fb9468e92bfd15ddc529ea8e9d84102}{ParsePrimary} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan)
+\item 
+void \hyperlink{csg2_dparser_8cpp_aa2c1da7e5181f6b00a336a9301189216}{ParseFlags} (\hyperlink{class_c_s_g_scanner}{CSGScanner} \&scan, Flags \&flags)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+TopoDS\_\-Shape \hyperlink{csg2_dparser_8cpp_af1e35fd7a928ced473037c7c00ff5c65}{geom}
+\item 
+TopoDS\_\-Compound \hyperlink{csg2_dparser_8cpp_a6ca88da3617347018d50405b90cced4f}{geometry}
+\item 
+BRep\_\-Builder \hyperlink{csg2_dparser_8cpp_a4ee9548e79a254b76920bfc15b797d59}{abuilder}
+\item 
+BRepOffsetAPI\_\-Sewing \hyperlink{csg2_dparser_8cpp_ae40c001b729f4ff722564e741f49689a}{sewer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The parser for the csg2d input files. 
+
+Definition in file \hyperlink{csg2_dparser_8cpp_source}{csg2Dparser.cpp}.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{csg2_dparser_8cpp_a86d6028e0a54088f7c208c1ff05bbec0}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSGScanner}\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan, }
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a86d6028e0a54088f7c208c1ff05bbec0}
+
+
+Overloaded $>$$>$ operator. 
+
+Reads a character. 
+
+Definition at line 186 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a8f82b9dd7c7a50ad3ae2745a76106d37}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSGScanner}\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan, }
+\item[{double \&}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a8f82b9dd7c7a50ad3ae2745a76106d37}
+
+
+Overloaded $>$$>$ operator. 
+
+Reads a double. 
+
+Definition at line 194 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_afbee96c26192a7ddd8d24f6b8fdd1ec0}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf CSGScanner}\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan, }
+\item[{int \&}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_afbee96c26192a7ddd8d24f6b8fdd1ec0}
+
+
+Overloaded $>$$>$ operator. 
+
+Reads an integer. 
+
+Definition at line 200 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a712333e7f2316853641e50de5a0e474f}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParseChar@{ParseChar}}
+\index{ParseChar@{ParseChar}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParseChar}]{\setlength{\rightskip}{0pt plus 5cm}void ParseChar (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan, }
+\item[{char}]{ch}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a712333e7f2316853641e50de5a0e474f}
+
+
+Definition at line 154 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_aa2c1da7e5181f6b00a336a9301189216}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParseFlags@{ParseFlags}}
+\index{ParseFlags@{ParseFlags}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParseFlags}]{\setlength{\rightskip}{0pt plus 5cm}void ParseFlags (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan, }
+\item[{Flags \&}]{flags}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_aa2c1da7e5181f6b00a336a9301189216}
+
+
+Definition at line 383 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a3abaaf1cc71618a73aa2488ecdfc8524}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParseNumber@{ParseNumber}}
+\index{ParseNumber@{ParseNumber}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParseNumber}]{\setlength{\rightskip}{0pt plus 5cm}double ParseNumber (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a3abaaf1cc71618a73aa2488ecdfc8524}
+
+
+Definition at line 161 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_addcd3929d0b5eccb7721796088c895de}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParsePlaneFigure@{ParsePlaneFigure}}
+\index{ParsePlaneFigure@{ParsePlaneFigure}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParsePlaneFigure}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PlaneFigure} $\ast$ ParsePlaneFigure (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_addcd3929d0b5eccb7721796088c895de}
+
+
+Definition at line 358 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a8fb9468e92bfd15ddc529ea8e9d84102}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParsePrimary@{ParsePrimary}}
+\index{ParsePrimary@{ParsePrimary}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParsePrimary}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PlaneFigure} $\ast$ ParsePrimary (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a8fb9468e92bfd15ddc529ea8e9d84102}
+
+
+Definition at line 210 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_af054c17de229ed96a8daf78b8901603e}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParseTerm@{ParseTerm}}
+\index{ParseTerm@{ParseTerm}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParseTerm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf PlaneFigure} $\ast$ ParseTerm (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_af054c17de229ed96a8daf78b8901603e}
+
+
+Definition at line 333 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a2e5120e5bc7b61cfb591ecb43cb491ac}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!ParseVector@{ParseVector}}
+\index{ParseVector@{ParseVector}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{ParseVector}]{\setlength{\rightskip}{0pt plus 5cm}gp\_\-Vec ParseVector (
+\begin{DoxyParamCaption}
+\item[{{\bf CSGScanner} \&}]{scan}
+\end{DoxyParamCaption}
+)}}
+\label{csg2_dparser_8cpp_a2e5120e5bc7b61cfb591ecb43cb491ac}
+
+
+Definition at line 175 of file csg2Dparser.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{csg2_dparser_8cpp_a4ee9548e79a254b76920bfc15b797d59}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!abuilder@{abuilder}}
+\index{abuilder@{abuilder}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{abuilder}]{\setlength{\rightskip}{0pt plus 5cm}BRep\_\-Builder {\bf abuilder}}}
+\label{csg2_dparser_8cpp_a4ee9548e79a254b76920bfc15b797d59}
+
+
+Definition at line 36 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_af1e35fd7a928ced473037c7c00ff5c65}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!geom@{geom}}
+\index{geom@{geom}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{geom}]{\setlength{\rightskip}{0pt plus 5cm}TopoDS\_\-Shape {\bf geom}}}
+\label{csg2_dparser_8cpp_af1e35fd7a928ced473037c7c00ff5c65}
+
+
+Definition at line 34 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_a6ca88da3617347018d50405b90cced4f}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!geometry@{geometry}}
+\index{geometry@{geometry}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{geometry}]{\setlength{\rightskip}{0pt plus 5cm}TopoDS\_\-Compound {\bf geometry}}}
+\label{csg2_dparser_8cpp_a6ca88da3617347018d50405b90cced4f}
+
+
+Definition at line 35 of file csg2Dparser.cpp.
+
+\hypertarget{csg2_dparser_8cpp_ae40c001b729f4ff722564e741f49689a}{
+\index{csg2Dparser.cpp@{csg2Dparser.cpp}!sewer@{sewer}}
+\index{sewer@{sewer}!csg2Dparser.cpp@{csg2Dparser.cpp}}
+\subsubsection[{sewer}]{\setlength{\rightskip}{0pt plus 5cm}BRepOffsetAPI\_\-Sewing {\bf sewer}}}
+\label{csg2_dparser_8cpp_ae40c001b729f4ff722564e741f49689a}
+
+
+Definition at line 37 of file csg2Dparser.cpp.
+

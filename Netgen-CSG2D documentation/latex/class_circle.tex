@@ -1,0 +1,150 @@
+\hypertarget{class_circle}{
+\section{Circle Class Reference}
+\label{class_circle}\index{Circle@{Circle}}
+}
+
+
+Class for the circle primitive.  
+
+
+
+
+{\ttfamily \#include $<$circle.hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_circle_a194f1acb83760f0e1915d63a4348b0da}{Circle} (const gp\_\-Pnt \&acenter, Standard\_\-Real aradius)
+\begin{DoxyCompactList}\small\item\em A constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_circle_ae3f30436e645d73e368e8ee55f8d1650}{$\sim$Circle} ()
+\begin{DoxyCompactList}\small\item\em A destructor. \item\end{DoxyCompactList}\item 
+TopoDS\_\-Shape \hyperlink{class_circle_abb2c1eab9855a9bd2547613dc12b4748}{MakeCircle} ()
+\begin{DoxyCompactList}\small\item\em Creates a circle represented as a bounded surface in the 3D space. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+gp\_\-Pnt \hyperlink{class_circle_a1b98a2fa0e78d5cccdffc723e0cd0ca8}{center}
+\begin{DoxyCompactList}\small\item\em The center of the circle. \item\end{DoxyCompactList}\item 
+Standard\_\-Real \hyperlink{class_circle_ab0935c62cf4fb06e85925a67f1fd7d1c}{radius}
+\begin{DoxyCompactList}\small\item\em The radius of the circle. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the circle primitive. This class implements an algorithm which is used to create a circle. 
+
+Definition at line 20 of file circle.hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_circle_a194f1acb83760f0e1915d63a4348b0da}{
+\index{Circle@{Circle}!Circle@{Circle}}
+\index{Circle@{Circle}!Circle@{Circle}}
+\subsubsection[{Circle}]{\setlength{\rightskip}{0pt plus 5cm}Circle::Circle (
+\begin{DoxyParamCaption}
+\item[{const gp\_\-Pnt \&}]{acenter, }
+\item[{Standard\_\-Real}]{aradius}
+\end{DoxyParamCaption}
+)}}
+\label{class_circle_a194f1acb83760f0e1915d63a4348b0da}
+
+
+A constructor. 
+
+Initializes the center of the circle with the point acenter and the radius with aradius. 
+\begin{DoxyParams}{Parameters}
+{\em acenter} & A gp\_\-Pnt argument. \\
+\hline
+{\em aradius} & A Standard\_\-Real value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_circle_ae3f30436e645d73e368e8ee55f8d1650}{$\sim$Circle()} 
+
+\hyperlink{class_circle_abb2c1eab9855a9bd2547613dc12b4748}{MakeCircle()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 14 of file circle.cpp.
+
+\hypertarget{class_circle_ae3f30436e645d73e368e8ee55f8d1650}{
+\index{Circle@{Circle}!$\sim$Circle@{$\sim$Circle}}
+\index{$\sim$Circle@{$\sim$Circle}!Circle@{Circle}}
+\subsubsection[{$\sim$Circle}]{\setlength{\rightskip}{0pt plus 5cm}Circle::$\sim$Circle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_circle_ae3f30436e645d73e368e8ee55f8d1650}
+
+
+A destructor. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_circle_a194f1acb83760f0e1915d63a4348b0da}{Circle()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 20 of file circle.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_circle_abb2c1eab9855a9bd2547613dc12b4748}{
+\index{Circle@{Circle}!MakeCircle@{MakeCircle}}
+\index{MakeCircle@{MakeCircle}!Circle@{Circle}}
+\subsubsection[{MakeCircle}]{\setlength{\rightskip}{0pt plus 5cm}TopoDS\_\-Shape Circle::MakeCircle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_circle_abb2c1eab9855a9bd2547613dc12b4748}
+
+
+Creates a circle represented as a bounded surface in the 3D space. 
+
+It takes the edge of the circle, adds it to a wire and eventually, creates a face resulted from taking the closed area determined by the wire on a bounded surface. It returns the face resulted. \begin{DoxyReturn}{Returns}
+The face for the circle. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_circle_a194f1acb83760f0e1915d63a4348b0da}{Circle()} 
+\end{DoxySeeAlso}
+
+
+Definition at line 25 of file circle.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_circle_a1b98a2fa0e78d5cccdffc723e0cd0ca8}{
+\index{Circle@{Circle}!center@{center}}
+\index{center@{center}!Circle@{Circle}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}gp\_\-Pnt {\bf Circle::center}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_circle_a1b98a2fa0e78d5cccdffc723e0cd0ca8}
+
+
+The center of the circle. 
+
+Stored as a 3D cartesian point. 
+
+Definition at line 23 of file circle.hpp.
+
+\hypertarget{class_circle_ab0935c62cf4fb06e85925a67f1fd7d1c}{
+\index{Circle@{Circle}!radius@{radius}}
+\index{radius@{radius}!Circle@{Circle}}
+\subsubsection[{radius}]{\setlength{\rightskip}{0pt plus 5cm}Standard\_\-Real {\bf Circle::radius}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_circle_ab0935c62cf4fb06e85925a67f1fd7d1c}
+
+
+The radius of the circle. 
+
+
+
+Definition at line 24 of file circle.hpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{circle_8hpp}{circle.hpp}\item 
+/home/cristina/work/netgen-\/csg2d/parser/\hyperlink{circle_8cpp}{circle.cpp}\end{DoxyCompactItemize}
