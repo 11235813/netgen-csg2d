@@ -62,13 +62,6 @@ NetgenGeometry * CSGRegister :: Load (string filename) const
 
 VisualScene * CSGRegister :: GetVisualScene (const NetgenGeometry * geom) const
 {
- OCCGeometry * geometry = dynamic_cast<OCCGeometry*> (ng_geometry);
-	if (geometry)
-	{
-		vsoccgeom2d.SetGeometry (geometry);
-		return &vsoccgeom2d;
-	}
-
 	return NULL;
 }
 
