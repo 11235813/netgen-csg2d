@@ -4,6 +4,11 @@
 /* Date:    20/06/2011                                                        */
 /******************************************************************************/
 
+/**
+ * @file csg2Dparser.cpp
+ * The parser for the csg2d input files.
+ */
+
 #include "csg2Dparser.hpp"
 
 static kwstruct defkw[] =

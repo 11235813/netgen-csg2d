@@ -6,6 +6,11 @@
 /* Date:    18/07/2011                                                    */
 /**************************************************************************/
 
+/**  
+ * @file ngcsg2d.cpp
+ * The main csg2d file.
+ */
+
 #include "csg2Dparser.cpp"
 
 #include <BRepTools.hxx>
@@ -18,6 +23,10 @@ using namespace netgen;
 
 extern DLL_HEADER NetgenGeometry * ng_geometry;
 
+/**  
+ * @class CSGRegister
+ * The geometry register.
+ */
 class CSGRegister : public GeometryRegister
 {
 public:
@@ -75,7 +84,6 @@ int Ng_csg2d_Init (Tcl_Interp * interp)
 {
 	cout<<endl<<"Loading CSG2d library..."<<endl;
 	geometryregister.Append (new CSGRegister);
-	cout<<endl<<geometryregister.Size()<<endl;
 	return TCL_OK;
 }
 

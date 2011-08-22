@@ -4,6 +4,11 @@
 /* Date:    08/06/2011                                                    */
 /**************************************************************************/
 
+/**  
+ * @file ellipse.cpp
+ * Ellipse primitive implementation.
+ */
+
 #include "csg2d.hpp"
 
 Ellipse :: Ellipse (const gp_Pnt &acenter, Standard_Real amajorRadius, Standard_Real aminorRadius)
@@ -21,18 +26,19 @@ Ellipse :: ~Ellipse ()
 TopoDS_Shape Ellipse :: MakeEllipse ()
 {
 	/*
-	 * create an ellipse represented in 3d
+	 * Create the support geometry: an ellipse represented in 3D.
 	 */
 	gp_Ax2 axis;
 	gp_Elips aellipse (axis, majorRadius, minorRadius);
 	aellipse.SetLocation (center);
 
+	/* Create the face corresponding to the ellipse. */
 	TopoDS_Edge W = BRepBuilderAPI_MakeEdge (aellipse);
 	BRepBuilderAPI_MakeWire mkWire;
 	mkWire.Add (W);
-	TopoDS_Wire myWireProfile = mkWire.Wire ();
-	TopoDS_Face myFaceProfile = BRepBuilderAPI_MakeFace (myWireProfile);  
+	TopoDS_Wire myWire = mkWire.Wire ();
+	TopoDS_Face myFace = BRepBuilderAPI_MakeFace (myWire);  
 
-	return myFaceProfile;
+	return myFace;
 }
 
