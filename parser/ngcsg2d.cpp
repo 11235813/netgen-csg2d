@@ -1,5 +1,11 @@
 #define OCCGEOMETRY
 
+/**************************************************************************/
+/* File:    ngcsg2d.cpp                                                   */
+/* Author:  Cristina Precup, cpcristinaprecup@gmail.com                   */
+/* Date:    18/07/2011                                                    */
+/**************************************************************************/
+
 #include "csg2Dparser.cpp"
 
 #include <BRepTools.hxx>
@@ -11,23 +17,20 @@
 using namespace netgen;
 
 extern DLL_HEADER NetgenGeometry * ng_geometry;
-//static VisualSceneGeometry2d vsgeom2d;
 
-
-
-class CSG2dRegister : public GeometryRegister
+class CSGRegister : public GeometryRegister
 {
 public:
 	virtual NetgenGeometry * Load (string filename) const;
 	virtual VisualScene * GetVisualScene (const NetgenGeometry * geom) const;
 };
 
-NetgenGeometry *  CSG2dRegister :: Load (string filename) const
+NetgenGeometry * CSGRegister :: Load (string filename) const
 {
 	const char * cfilename = filename.c_str();
 	if (strcmp (&cfilename[strlen(cfilename)-5], "geo2d") == 0)
 	{
-		PrintMessage (1, "Load CSG 2D geometry file ", cfilename);
+		PrintMessage (1, "Load CSG 2D geometry file: ", cfilename);
 
 		ifstream infile(cfilename);
 
@@ -35,19 +38,13 @@ NetgenGeometry *  CSG2dRegister :: Load (string filename) const
 		TopoDS_Shape geom = s->ParseCSG (infile);
 		if (geom.IsNull())
 		{
-			cout << "geo-file should start with algebraic2d" << endl;
 			return NULL;
 		}
-		///////write in a BRep file////////
-		BRepTools * brep_writer = new BRepTools();
-		brep_writer->Write(geom, "myBRep.brep");
-		/////////////////
+		
 		OCCGeometry * occgeo;
 		occgeo = new OCCGeometry;
 		occgeo->shape = geom;
 
-////////////////test colorFlags
-//		occgeo->SetColorValid(true);
 		occgeo->SetColorValid(s->GetColorValid());
 		occgeo->SetFaceColors(s->GetColorFlags());
 
@@ -58,25 +55,20 @@ NetgenGeometry *  CSG2dRegister :: Load (string filename) const
 		PrintContents (occgeo);
 		
 		return occgeo;
-/* 
-SplineGeometry2d * hgeom = new SplineGeometry2d();
-hgeom -> Load (cfilename);
-return hgeom;
-*/
 	}
 	
 	return NULL;
 }
 
-VisualScene * CSG2dRegister :: GetVisualScene (const NetgenGeometry * geom) const
+VisualScene * CSGRegister :: GetVisualScene (const NetgenGeometry * geom) const
 {
- /* SplineGeometry2d * geometry = dynamic_cast<SplineGeometry2d*> (ng_geometry);
+ OCCGeometry * geometry = dynamic_cast<OCCGeometry*> (ng_geometry);
 	if (geometry)
-		{
-vsgeom2d.SetGeometry (geometry);
-return &vsgeom2d;
-		}
-*/
+	{
+		vsoccgeom2d.SetGeometry (geometry);
+		return &vsoccgeom2d;
+	}
+
 	return NULL;
 }
 
@@ -89,7 +81,8 @@ extern "C" int Ng_csg2d_Init (Tcl_Interp * interp);
 int Ng_csg2d_Init (Tcl_Interp * interp)
 {
 	cout<<endl<<"Loading CSG2d library..."<<endl;
-	geometryregister.Append (new CSG2dRegister);
+	geometryregister.Append (new CSGRegister);
+	cout<<endl<<geometryregister.Size()<<endl;
 	return TCL_OK;
 }
 
