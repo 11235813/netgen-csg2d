@@ -30,7 +30,19 @@ extern DLL_HEADER NetgenGeometry * ng_geometry;
 class CSGRegister : public GeometryRegister
 {
 public:
+
+	/** 
+ 	 * It loads the CSG2D input file.
+ 	 * @param filename A string argument.
+ 	 * @return a netgen geometry.
+ 	 */
 	virtual NetgenGeometry * Load (string filename) const;
+
+	/** 
+ 	 * Get the visual scene for the geometry.
+ 	 * @param geom A NetgenGeometry * argument.
+ 	 * @return a pointer to a VisualScene.
+ 	 */
 	virtual VisualScene * GetVisualScene (const NetgenGeometry * geom) const;
 };
 
@@ -43,7 +55,10 @@ NetgenGeometry * CSGRegister :: Load (string filename) const
 
 		ifstream infile(cfilename);
 
+		/* Set up a scanner for the CSG2D input file. */
 		CSGScanner *s = new CSGScanner(infile);
+
+		/* Take the final compound shape obtained after parsing the file. */
 		TopoDS_Shape geom = s->ParseCSG (infile);
 		if (geom.IsNull())
 		{
@@ -80,9 +95,14 @@ extern "C" __declspec(dllexport) int Ng_csg2d_Init (Tcl_Interp * interp);
 extern "C" int Ng_csg2d_Init (Tcl_Interp * interp);
 #endif
 
+/** 
+ * Load the CSG2D library.
+ * @param interp A Tcl_Interp * argument.
+ * @return a value that suggests that the loading was done or not.
+ */
 int Ng_csg2d_Init (Tcl_Interp * interp)
 {
-	cout<<endl<<"Loading CSG2d library..."<<endl;
+	cout<<endl<<"Loading CSG2D library..."<<endl;
 	geometryregister.Append (new CSGRegister);
 	return TCL_OK;
 }

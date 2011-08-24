@@ -113,6 +113,10 @@ class CSGScanner
 		bool * colorValid; /**< Flags for valid definition of color for a certain
 														top-level object. True, if a color is defined. */
 
+		TopoDS_Compound geometry; /**< The final shape composed of all the TLOs. */
+		BRep_Builder builder; /**< It builds the compound shape. */
+		BRepOffsetAPI_Sewing sewer; /**< It assembles contigous shapes into one shape. */
+
   public:
 
 		/**
@@ -125,6 +129,7 @@ class CSGScanner
 		/**  
  		 * Getter for the token type.
  		 * @return the token.
+ 		 * @see CSGScanner()
  		 */
 		TOKEN_TYPE GetToken() const
 		{ return token; }
@@ -132,6 +137,7 @@ class CSGScanner
 		/**  
  		 * Getter for the number_value.
  		 * @return this number value.
+ 		 * @see CSGScanner()
  		 */
 		double GetNumValue() const
 		{ return num_value; }
@@ -139,6 +145,7 @@ class CSGScanner
 		/**  
  		 * Getter for the string_value.
  		 * @return this string value.
+ 		 * @see CSGScanner()
  		 */
 		const string & GetStringValue() const
 		{ return string_value; }
@@ -146,6 +153,7 @@ class CSGScanner
 		/**  
  		 * Getter for the first character from the string_value.
  		 * @return this character.
+ 		 * @see CSGScanner()
   	 */
 		char GetCharValue() const
 		{ return string_value[0]; }
@@ -153,6 +161,7 @@ class CSGScanner
 		/**  
  		 * Getter for the prim_token.
  		 * @return this primitive token.
+ 		 * @see CSGScanner()
   	 */
 		PRIMITIVE_TYPE GetPrimitiveToken() const
 		{ return prim_token; }
@@ -167,6 +176,7 @@ class CSGScanner
 		/**  
  		 * Getter for the colors of the top-level objects.
  		 * @returns these colors.
+ 		 * @see CSGScanner()
   	 */
 		Quantity_Color * GetColorFlags()
 		{ return colorFlags; }
@@ -184,6 +194,7 @@ class CSGScanner
 		/**  
  		 * Getter for the validity flags of the colors.
  		 * @return these boolean flags.
+ 		 * @see CSGScanner()
  		 */
 		bool * GetColorValid()
 		{ return colorValid; }
@@ -215,7 +226,7 @@ class CSGScanner
 		/**
  		 * Prints an error with the message err.
  		 * It makes use of the linenum variable in order to specify the line number
- 		 * in which the error has been occurred.
+ 		 * in which the error has occurred.
  		 * @param err A string & argument.
  		 */
 		void Error (const string & err);
