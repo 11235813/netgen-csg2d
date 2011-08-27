@@ -1,6 +1,6 @@
 Steps:
 
-1. install netgen by using the following link: http://goo.gl/gTUoV
+1. install netgen by using the following link: http://sourceforge.net/apps/mediawiki/netgen-mesher/index.php?title=Installation
 	Remarks: 
 		- don't forget to run configure with occ 
 		- set the environment variables
